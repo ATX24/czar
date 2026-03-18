@@ -51,21 +51,9 @@ function App() {
   const fetchPosts = useCallback(async () => {
     setLoading(true);
     try {
-      // Calculate the "since" timestamp
-      const now = new Date();
-      let since: Date;
-      if (timeframeFilter === '1h') {
-        since = new Date(now.getTime() - 60 * 60 * 1000);
-      } else if (timeframeFilter === '24h') {
-        since = new Date(now.getTime() - 24 * 60 * 60 * 1000);
-      } else {
-        since = new Date(now.getTime() - 7 * 24 * 60 * 60 * 1000);
-      }
-
       let query = supabase
         .from('raw_posts')
         .select('*')
-        .gte('created_at', since.toISOString())
         .order('score', { ascending: false })
         .limit(100);
 
@@ -107,7 +95,7 @@ function App() {
     } finally {
       setLoading(false);
     }
-  }, [sourceFilter, timeframeFilter]);
+  }, [sourceFilter]);
 
   useEffect(() => {
     fetchPosts();
