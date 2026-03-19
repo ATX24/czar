@@ -11,21 +11,17 @@ function formatScore(score: number): string {
 }
 
 function getSourceLabel(source: string): string {
-  switch (source) {
-    case 'hn': return 'HN';
-    case 'reddit': return 'RD';
-    case 'twitter': return 'TW';
-    default: return source.toUpperCase();
-  }
+  const labels: Record<string, string> = {
+    hn: 'HN', hackernews_best: 'HN',
+    lobsters: 'LB', techcrunch: 'TC',
+    verge: 'VG', wired: 'WD', arstechnica: 'ARS',
+  };
+  return labels[source] || source.slice(0, 3).toUpperCase();
 }
 
 function getMetricLabel(source: string): string {
-  switch (source) {
-    case 'hn': return 'Points';
-    case 'reddit': return 'Upvotes';
-    case 'twitter': return 'Reposts';
-    default: return 'Score';
-  }
+  if (source === 'hn' || source === 'hackernews_best' || source === 'lobsters') return 'Points';
+  return 'Score';
 }
 
 function calculateAge(createdAt: string): string {
@@ -156,13 +152,13 @@ function App() {
           <div className="control-group">
             <span className="control-label">Source</span>
             <div className="pill-list">
-              {(['all', 'hn', 'reddit'] as SourceFilter[]).map((source) => (
+              {(['all', 'hn', 'lobsters', 'techcrunch', 'verge', 'wired'] as SourceFilter[]).map((source) => (
                 <button
                   key={source}
                   className={`pill ${sourceFilter === source ? 'active' : ''}`}
                   onClick={() => setSourceFilter(source)}
                 >
-                  {source === 'all' ? 'All' : source === 'hn' ? 'HackerNews' : 'Reddit'}
+                  {source === 'all' ? 'All' : source === 'hn' ? 'HN' : source === 'lobsters' ? 'Lobsters' : source === 'techcrunch' ? 'TC' : source === 'verge' ? 'Verge' : 'Wired'}
                 </button>
               ))}
             </div>
