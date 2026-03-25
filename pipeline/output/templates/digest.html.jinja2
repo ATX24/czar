@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trend Intelligence Digest - Week {{ week_num }}, {{ year }}</title>
+    <style>
+        :root {
+            --bg-primary: #0d1117;
+            --bg-secondary: #161b22;
+            --bg-tertiary: #21262d;
+            --text-primary: #c9d1d9;
+            --text-secondary: #8b949e;
+            --text-muted: #6e7681;
+            --accent: #58a6ff;
+            --accent-secondary: #238636;
+            --border: #30363d;
+            --velocity-high: #3fb950;
+            --velocity-med: #d29922;
+            --velocity-low: #8b949e;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            color: var(--text-secondary);
+            font-size: 1rem;
+        }
+
+        .date-range {
+            color: var(--text-muted);
+            font-size: 0.875rem;
+            margin-top: 0.5rem;
+        }
+
+        .theme-card {
+            background-color: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .theme-header {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+        }
+
+        .theme-rank {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .rank-number {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--accent);
+            min-width: 2rem;
+        }
+
+        .theme-label {
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+
+        .theme-scores {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .score {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0.5rem 0.75rem;
+            background-color: var(--bg-tertiary);
+            border-radius: 6px;
+        }
+
+        .score-label {
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .score-value {
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        .score-value.high {
+            color: var(--velocity-high);
+        }
+
+        .score-value.med {
+            color: var(--velocity-med);
+        }
+
+        .driver-tag {
+            font-size: 0.75rem;
+            padding: 0.25rem 0.5rem;
+            background-color: var(--bg-tertiary);
+            border-radius: 4px;
+            color: var(--text-secondary);
+        }
+
+        .interpretation {
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+            padding-left: 3rem;
+        }
+
+        .example-posts {
+            padding-left: 3rem;
+        }
+
+        .example-posts h4 {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.5rem;
+        }
+
+        .post-list {
+            list-style: none;
+        }
+
+        .post-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .post-item:last-child {
+            border-bottom: none;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 0.15rem 0.4rem;
+            border-radius: 3px;
+            font-size: 0.65rem;
+            font-weight: 600;
+            color: white;
+            text-transform: uppercase;
+        }
+
+        .post-link {
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .post-link:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border);
+            color: var(--text-muted);
+            font-size: 0.875rem;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 1rem;
+            }
+
+            .theme-header {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .interpretation,
+            .example-posts {
+                padding-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Trend Intelligence Digest</h1>
+            <p class="subtitle">Week {{ week_num }}, {{ year }}</p>
+            <p class="date-range">
+                {{ digest.date_range[0]|format_date }} — {{ digest.date_range[1]|format_date }}
+            </p>
+        </header>
+
+        <main>
+            {% for theme in digest.top_themes %}
+            <article class="theme-card">
+                <div class="theme-header">
+                    <div class="theme-rank">
+                        <span class="rank-number">#{{ theme.rank }}</span>
+                        <span class="theme-label">{{ theme.label }}</span>
+                        {% if theme.driver %}
+                        <span class="driver-tag">{{ theme.driver|driver_label }}</span>
+                        {% endif %}
+                    </div>
+                    <div class="theme-scores">
+                        <div class="score">
+                            <span class="score-label">Velocity</span>
+                            <span class="score-value {% if theme.velocity_score > 2 %}high{% elif theme.velocity_score > 1 %}med{% endif %}">
+                                {{ "%.1f"|format(theme.velocity_score) }}
+                            </span>
+                        </div>
+                        <div class="score">
+                            <span class="score-label">Novelty</span>
+                            <span class="score-value">{{ "%.2f"|format(theme.novelty_score) }}</span>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="interpretation">{{ theme.interpretation }}</p>
+
+                <div class="example-posts">
+                    <h4>Top Posts</h4>
+                    <ul class="post-list">
+                        {% for post in theme.example_posts %}
+                        <li class="post-item">
+                            {{ post.source|source_badge|safe }}
+                            <a href="{{ post.url }}" class="post-link" target="_blank" rel="noopener">
+                                {{ post.title }}
+                            </a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </article>
+            {% endfor %}
+        </main>
+
+        <footer>
+            <p>Generated {{ digest.generated_at|format_date }} by Trend Intelligence System</p>
+        </footer>
+    </div>
+</body>
+</html>
