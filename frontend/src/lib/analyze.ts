@@ -219,7 +219,6 @@ export function detectGravity(clusters: TopicCluster[]): GravitySignal[] {
 
     if (watchedInCluster.length >= 1) {
       // Check timing spread for coordination heuristic
-      const now = Date.now();
       const postTimes = cluster.posts
         .filter(p => {
           const author = ((p.metadata?.by as string) || '').toLowerCase();
