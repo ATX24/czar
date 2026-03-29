@@ -1,113 +1,43 @@
-import { useState, useEffect, useCallback } from 'react';
-import { Heart } from 'lucide-react';
-import type { Post, SourceFilter, TimeframeFilter } from './types';
+import { useState, useEffect, useMemo } from 'react';
+import type { RawPost, TabId, TopicCluster, GravitySignal } from './types';
 import { supabase } from './supabaseClient';
-
-function formatScore(score: number): string {
-  if (score >= 1000) {
-    return (score / 1000).toFixed(1) + 'K';
-  }
-  return score.toLocaleString();
-}
-
-function getSourceLabel(source: string): string {
-  const labels: Record<string, string> = {
-    hn: 'HN', hackernews_best: 'HN',
-    lobsters: 'LB', techcrunch: 'TC',
-    verge: 'VG', wired: 'WD', arstechnica: 'ARS',
-  };
-  return labels[source] || source.slice(0, 3).toUpperCase();
-}
-
-function getMetricLabel(source: string): string {
-  if (source === 'hn' || source === 'hackernews_best' || source === 'lobsters') return 'Points';
-  return 'Score';
-}
-
-function calculateAge(createdAt: string): string {
-  const now = new Date();
-  const created = new Date(createdAt);
-  const diffMs = now.getTime() - created.getTime();
-  const diffDays = Math.floor(diffMs / (1000 * 60 * 60 * 24));
-  if (diffDays > 0) return `${diffDays}d ago`;
-  const diffHours = Math.floor(diffMs / (1000 * 60 * 60));
-  if (diffHours > 0) return `${diffHours}h ago`;
-  const diffMins = Math.floor(diffMs / (1000 * 60));
-  return `${diffMins}m ago`;
-}
+import { clusterPosts, detectGravity, getHeatmapTopics, getInflections } from './lib/analyze';
+import { TopicCard } from './components/TopicCard';
 
 function App() {
-  const [posts, setPosts] = useState<Post[]>([]);
+  const [posts, setPosts] = useState<RawPost[]>([]);
   const [loading, setLoading] = useState(true);
-  const [sourceFilter, setSourceFilter] = useState<SourceFilter>('all');
-  const [timeframeFilter, setTimeframeFilter] = useState<TimeframeFilter>('7d');
-  const [likedPosts, setLikedPosts] = useState<Set<string>>(new Set());
-  const [activeNav, setActiveNav] = useState('monitor');
+  const [activeTab, setActiveTab] = useState<TabId>('heatmap');
 
-  const fetchPosts = useCallback(async () => {
-    setLoading(true);
-    try {
-      let query = supabase
+  useEffect(() => {
+    (async () => {
+      setLoading(true);
+      const { data, error } = await supabase
         .from('raw_posts')
         .select('*')
-        .order('score', { ascending: false })
-        .limit(100);
-
-      if (sourceFilter !== 'all') {
-        query = query.eq('source', sourceFilter);
-      }
-
-      const { data, error } = await query;
+        .order('created_at', { ascending: false })
+        .limit(500);
 
       if (error) {
         console.error('Supabase error:', error);
         setPosts([]);
-        return;
-      }
-
-      const mapped: Post[] = (data || []).map((row) => {
-        const meta = row.metadata || {};
-        // Use actual points from metadata, not the normalized 0-1 score
-        const realScore = meta.points ?? meta.score ?? row.score ?? 0;
-        return {
-          id: row.id,
-          source: row.source,
-          title: (row.text || 'Untitled').slice(0, 200),
-          url: row.url,
-          score: realScore,
-          comments: meta.descendants ?? meta.num_comments ?? 0,
-          author: meta.by ?? meta.author ?? 'unknown',
-          subreddit: meta.subreddit ?? undefined,
-          created_at: row.created_at,
-          age: row.created_at ? calculateAge(row.created_at) : 'unknown',
-        };
-      });
-
-      mapped.sort((a, b) => b.score - a.score);
-      setPosts(mapped);
-    } catch (err) {
-      console.error('Failed to fetch posts:', err);
-      setPosts([]);
-    } finally {
-      setLoading(false);
-    }
-  }, [sourceFilter]);
-
-  useEffect(() => {
-    fetchPosts();
-  }, [fetchPosts]);
-
-  const toggleLike = (postId: string) => {
-    setLikedPosts(prev => {
-      const newSet = new Set(prev);
-      if (newSet.has(postId)) {
-        newSet.delete(postId);
       } else {
-        newSet.add(postId);
+        setPosts((data as RawPost[]) || []);
       }
-      return newSet;
-    });
-  };
+      setLoading(false);
+    })();
+  }, []);
+
+  const clusters = useMemo(() => clusterPosts(posts), [posts]);
+  const heatmap = useMemo(() => getHeatmapTopics(clusters), [clusters]);
+  const gravitySignals = useMemo(() => detectGravity(clusters), [clusters]);
+  const inflections = useMemo(() => getInflections(clusters), [clusters]);
+
+  const tabs: { id: TabId; label: string; count: number }[] = [
+    { id: 'heatmap', label: 'Heatmap', count: heatmap.length },
+    { id: 'gravity', label: 'Gravity', count: gravitySignals.length },
+    { id: 'inflections', label: 'Inflections', count: inflections.length },
+  ];
 
   return (
     <div className="app-container">
@@ -116,153 +46,97 @@ function App() {
           <span className="logo-icon">✺</span>
           <span>czar</span>
         </div>
-
-        <div className={`status-marker ${loading ? 'loading' : ''}`}></div>
-
-        <nav className="header-nav">
-          <a
-            className={activeNav === 'monitor' ? 'active' : ''}
-            onClick={() => setActiveNav('monitor')}
-          >
-            Monitor
-          </a>
-          <a
-            className={activeNav === 'archive' ? 'active' : ''}
-            onClick={() => setActiveNav('archive')}
-          >
-            Archive
-          </a>
-          <a
-            className={activeNav === 'sources' ? 'active' : ''}
-            onClick={() => setActiveNav('sources')}
-          >
-            Sources
-          </a>
-          <a
-            className={activeNav === 'settings' ? 'active' : ''}
-            onClick={() => setActiveNav('settings')}
-          >
-            Settings
-          </a>
-        </nav>
+        <div className={`status-marker ${loading ? 'loading' : ''}`} />
       </header>
 
+      <nav className="tab-bar">
+        {tabs.map(tab => (
+          <button
+            key={tab.id}
+            className={`tab-btn ${activeTab === tab.id ? 'active' : ''}`}
+            onClick={() => setActiveTab(tab.id)}
+          >
+            {tab.label}
+            <span className="tab-count">{tab.count}</span>
+          </button>
+        ))}
+      </nav>
+
       <main>
-        <section className="controls-section">
-          <div className="control-group">
-            <span className="control-label">Source</span>
-            <div className="pill-list">
-              {(['all', 'hn', 'lobsters', 'techcrunch', 'verge', 'wired'] as SourceFilter[]).map((source) => (
-                <button
-                  key={source}
-                  className={`pill ${sourceFilter === source ? 'active' : ''}`}
-                  onClick={() => setSourceFilter(source)}
-                >
-                  {source === 'all' ? 'All' : source === 'hn' ? 'HN' : source === 'lobsters' ? 'Lobsters' : source === 'techcrunch' ? 'TC' : source === 'verge' ? 'Verge' : 'Wired'}
-                </button>
-              ))}
-            </div>
+        {loading ? (
+          <div className="loading-state">
+            {Array.from({ length: 4 }).map((_, i) => (
+              <div key={i} className="skeleton-card" />
+            ))}
           </div>
-
-          <div className="control-group">
-            <span className="control-label">Timeframe</span>
-            <div className="pill-list">
-              {(['1h', '24h', '7d'] as TimeframeFilter[]).map((tf) => (
-                <button
-                  key={tf}
-                  className={`pill ${timeframeFilter === tf ? 'active' : ''}`}
-                  onClick={() => setTimeframeFilter(tf)}
-                >
-                  {tf.toUpperCase()}
-                </button>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="feed-list">
-          {loading ? (
-            Array.from({ length: 5 }).map((_, i) => (
-              <article key={i} className="feed-item">
-                <div className="item-metrics">
-                  <span className="metric-main loading-skeleton" style={{ width: 60, height: 20 }}>&nbsp;</span>
-                  <span className="metric-sub loading-skeleton" style={{ width: 80, height: 12 }}>&nbsp;</span>
-                </div>
-                <div className="item-content">
-                  <div className="loading-skeleton" style={{ width: '80%', height: 18 }}>&nbsp;</div>
-                  <div className="loading-skeleton" style={{ width: '40%', height: 14 }}>&nbsp;</div>
-                </div>
-              </article>
-            ))
-          ) : posts.length === 0 ? (
-            <div className="empty-state">
-              <h3>No posts found</h3>
-              <p>Try adjusting your filters or check back later.</p>
-            </div>
-          ) : (
-            posts.map((post) => (
-              <article key={post.id} className="feed-item">
-                <div className="item-metrics">
-                  <span className="metric-main">{formatScore(post.score)}</span>
-                  <span className="metric-sub">
-                    {getMetricLabel(post.source)} ({getSourceLabel(post.source)})
-                  </span>
-                </div>
-                <div className="item-content">
-                  <a
-                    href={post.url || '#'}
-                    className="item-title"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {post.title}
-                  </a>
-                  <div className="item-meta">
-                    {post.source === 'reddit' && post.subreddit && (
-                      <div className="meta-part">
-                        <span>Sub:</span> r/{post.subreddit}
-                      </div>
-                    )}
-                    {post.source === 'hn' && (
-                      <div className="meta-part">
-                        <span>By:</span> {post.author}
-                      </div>
-                    )}
-                    <div className="meta-part">
-                      <span>Age:</span> {post.age}
-                    </div>
-                    {post.comments > 0 && (
-                      <div className="meta-part">
-                        <span>Cmts:</span> {formatScore(post.comments)}
-                      </div>
-                    )}
-                  </div>
-                </div>
-                <div className="item-actions">
-                  <Heart
-                    className={`action-icon ${likedPosts.has(post.id) ? 'liked' : ''}`}
-                    size={14}
-                    onClick={() => toggleLike(post.id)}
-                    fill={likedPosts.has(post.id) ? 'currentColor' : 'none'}
-                  />
-                  <a
-                    href={post.url || '#'}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="action-pill"
-                  >
-                    Read
-                  </a>
-                </div>
-              </article>
-            ))
-          )}
-        </section>
-
-        <div className="footer-status">
-          {loading ? 'Updating Stream...' : `${posts.length} items loaded`}
-        </div>
+        ) : (
+          <>
+            {activeTab === 'heatmap' && (
+              <HeatmapView topics={heatmap} />
+            )}
+            {activeTab === 'gravity' && (
+              <GravityView signals={gravitySignals} />
+            )}
+            {activeTab === 'inflections' && (
+              <InflectionsView topics={inflections} />
+            )}
+          </>
+        )}
       </main>
+
+      <div className="footer-status">
+        {loading
+          ? 'Analyzing stream...'
+          : `${posts.length} posts → ${clusters.length} topics`}
+      </div>
+    </div>
+  );
+}
+
+function HeatmapView({ topics }: { topics: TopicCluster[] }) {
+  if (topics.length === 0) return <EmptyState message="No velocity signals yet. Waiting for data." />;
+  return (
+    <section className="card-grid">
+      {topics.map((t, i) => (
+        <TopicCard key={t.id} topic={t} rank={i + 1} />
+      ))}
+    </section>
+  );
+}
+
+function GravityView({ signals }: { signals: GravitySignal[] }) {
+  if (signals.length === 0) return <EmptyState message="No watched-account convergence detected." />;
+  return (
+    <section className="card-grid">
+      {signals.map(s => (
+        <TopicCard
+          key={s.topic.id}
+          topic={s.topic}
+          showGravityInfo={{
+            watchedAccounts: s.watchedAccounts,
+            isCoordinated: s.isCoordinated,
+          }}
+        />
+      ))}
+    </section>
+  );
+}
+
+function InflectionsView({ topics }: { topics: TopicCluster[] }) {
+  if (topics.length === 0) return <EmptyState message="No inflection points detected in this window." />;
+  return (
+    <section className="card-grid">
+      {topics.map(t => (
+        <TopicCard key={t.id} topic={t} />
+      ))}
+    </section>
+  );
+}
+
+function EmptyState({ message }: { message: string }) {
+  return (
+    <div className="empty-state">
+      <p>{message}</p>
     </div>
   );
 }

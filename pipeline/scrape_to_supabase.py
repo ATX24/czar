@@ -14,8 +14,8 @@ from supabase import create_client
 
 from collectors import HackerNewsCollector
 
-# Load .env from czar root
-load_dotenv(Path(__file__).parent.parent / ".env")
+# Load .env from pipeline directory
+load_dotenv(Path(__file__).parent / ".env")
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 logger = logging.getLogger(__name__)
