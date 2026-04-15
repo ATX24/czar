@@ -29,11 +29,17 @@ ALGOLIA_BASE = "https://hn.algolia.com/api/v1"
 # Algolia API helpers
 # ---------------------------------------------------------------------------
 
-def algolia_search(query: str, tags: str, page: int = 0, hits_per_page: int = 50) -> dict:
-    """Single page search. tags examples: 'story', 'comment', 'show_hn', 'ask_hn'"""
+def algolia_search(query: str, tags: str, page: int = 0, hits_per_page: int = 50,
+                   exact_phrase: bool = False) -> dict:
+    """
+    Single page search. tags examples: 'story', 'comment', 'show_hn', 'ask_hn'
+    exact_phrase=True wraps query in quotes for Algolia phrase matching,
+    reducing noise for generic company names (e.g. "Sierra", "Render", "Lambda").
+    """
     url = f"{ALGOLIA_BASE}/search"
+    q = f'"{query}"' if exact_phrase else query
     params = {
-        "query": query,
+        "query": q,
         "tags": tags,
         "hitsPerPage": hits_per_page,
         "page": page,
@@ -43,17 +49,17 @@ def algolia_search(query: str, tags: str, page: int = 0, hits_per_page: int = 50
     return r.json()
 
 
-def algolia_search_all(query: str, tags: str, max_pages: int = 5) -> list:
+def algolia_search_all(query: str, tags: str, max_pages: int = 5,
+                       exact_phrase: bool = False) -> list:
     """Paginate through Algolia results, up to max_pages."""
     hits = []
     for page in range(max_pages):
-        result = algolia_search(query, tags, page=page)
+        result = algolia_search(query, tags, page=page, exact_phrase=exact_phrase)
         page_hits = result.get("hits", [])
         hits.extend(page_hits)
-        # Stop if we've collected all results
         if page >= result.get("nbPages", 1) - 1:
             break
-        time.sleep(0.1)  # polite crawl
+        time.sleep(0.1)
     return hits
 
 
@@ -118,6 +124,7 @@ def scrape(
     founder_names: list = None,
     founder_hn_usernames: list = None,
     aliases: list = None,
+    exact_phrase: bool = False,
 ) -> dict:
     """
     Args:
@@ -132,12 +139,13 @@ def scrape(
 
     # --- Company story + comment mentions ---
     for term in search_terms:
-        print(f"  Searching HN stories for '{term}'...")
-        stories = algolia_search_all(term, tags="story", max_pages=5)
+        ep = exact_phrase or term in search_terms[1:]  # always exact for aliases
+        print(f"  Searching HN stories for '{term}'" + (" [exact]" if ep else "") + "...")
+        stories = algolia_search_all(term, tags="story", max_pages=5, exact_phrase=ep)
         all_story_hits.extend(stories)
 
         print(f"  Searching HN comments for '{term}'...")
-        comments = algolia_search_all(term, tags="comment", max_pages=3)
+        comments = algolia_search_all(term, tags="comment", max_pages=3, exact_phrase=ep)
         all_comment_hits.extend(comments)
 
     # Deduplicate by objectID
@@ -159,10 +167,10 @@ def scrape(
 
     # --- Show HN + Ask HN ---
     print(f"  Searching Show HN for '{company_name}'...")
-    show_hn_hits = algolia_search_all(company_name, tags="show_hn", max_pages=2)
+    show_hn_hits = algolia_search_all(company_name, tags="show_hn", max_pages=2, exact_phrase=exact_phrase)
 
     print(f"  Searching Ask HN for '{company_name}'...")
-    ask_hn_hits = algolia_search_all(company_name, tags="ask_hn", max_pages=2)
+    ask_hn_hits = algolia_search_all(company_name, tags="ask_hn", max_pages=2, exact_phrase=exact_phrase)
 
     # --- Founder signals ---
     founder_story_hits = []

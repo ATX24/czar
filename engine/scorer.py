@@ -51,33 +51,43 @@ def load_json(path: Path) -> dict:
 
 def score_organic_growth(github: dict, hn: dict, reddit: dict) -> float:
     """
-    Signals: star count, 30d star gain, commit velocity, HN mention count, Reddit global mentions
+    Signals: star count, 30d star gain, commit velocity, HN story mentions + engagement, Reddit mentions
     """
+    import math
     sub_scores = []
 
-    # GitHub: stars (log scale, normalized to ~1M stars = 1.0)
+    # GitHub: stars (log scale, 1M stars = 1.0)
     stars = github.get("stars", 0) or 0
     if stars > 0:
-        import math
-        sub_scores.append(clamp(math.log10(stars + 1) / 6))  # log10(1M) = 6
+        sub_scores.append(clamp(math.log10(stars + 1) / 6))
 
-    # GitHub: 30d star gain relative to total
-    trajectory = github.get("star_trajectory_30d", {})
-    gained_30d = trajectory.get("stars_gained_30d_approx", 0) or 0
-    if stars > 0:
-        sub_scores.append(clamp(gained_30d / max(stars, 1) * 10))  # 10%/mo growth = 1.0
+    # GitHub: 30d star gain (absolute, 10k gained = 1.0)
+    trajectory = github.get("star_trajectory_30d", {}) or {}
+    gained_30d = trajectory.get("stars_gained_30d") or 0
+    if gained_30d:
+        sub_scores.append(clamp(gained_30d / 10000))
 
-    # GitHub: commit velocity (>= 50 commits/week = 1.0)
-    commit_avg = (github.get("commit_velocity") or {}).get("commits_per_week_avg") or 0
-    sub_scores.append(clamp(commit_avg / 50))
+    # GitHub: commit velocity 4w avg (100 commits/wk = 1.0)
+    commit_avg = (github.get("commit_velocity") or {}).get("commits_per_week_4w_avg") or 0
+    if commit_avg:
+        sub_scores.append(clamp(commit_avg / 100))
 
-    # HN: mention count (500+ = 1.0)
-    hn_mentions = hn.get("company_mention_count", 0) or 0
-    sub_scores.append(clamp(hn_mentions / 500))
+    # HN: story mention count (500+ = 1.0)
+    hn_stories = hn.get("story_mention_count", 0) or 0
+    sub_scores.append(clamp(hn_stories / 500))
+
+    # HN: total engagement score (weighted points+comments; 100k = 1.0)
+    hn_eng = hn.get("total_engagement_score", 0) or 0
+    sub_scores.append(clamp(hn_eng / 100000))
+
+    # HN: Show HN posts (signal of product launches; 20+ = 1.0)
+    show_hn = hn.get("show_hn_count", 0) or 0
+    sub_scores.append(clamp(show_hn / 20))
 
     # Reddit: global mentions (100+ = 1.0)
     reddit_mentions = reddit.get("global_mention_count", 0) or 0
-    sub_scores.append(clamp(reddit_mentions / 100))
+    if reddit_mentions:
+        sub_scores.append(clamp(reddit_mentions / 100))
 
     return sum(sub_scores) / len(sub_scores) if sub_scores else 0.0
 
@@ -142,15 +152,24 @@ def score_revenue_proxies(linkedin: dict) -> float:
 
 def score_product_sentiment(hn: dict, reddit: dict, github: dict) -> float:
     """
-    Signals: HN top post score, Reddit top post score, GitHub open issues / stars ratio
+    Signals: HN top story points, HN Ask HN engagement, Reddit top post score, GitHub issues/stars ratio
     """
     sub_scores = []
 
-    # HN: best post score (10k+ = 1.0)
-    top_hn = hn.get("top_company_posts", []) or []
-    if top_hn:
-        best_hn_score = max((p.get("points") or 0) for p in top_hn)
-        sub_scores.append(clamp(best_hn_score / 10000))
+    # HN: best story points (2000+ = 1.0)
+    top_stories = hn.get("top_stories", []) or []
+    if top_stories:
+        best_points = max((p.get("points") or 0) for p in top_stories)
+        sub_scores.append(clamp(best_points / 2000))
+
+    # HN: best story comment count (500+ = 1.0 — signals controversy or deep interest)
+    if top_stories:
+        best_comments = max((p.get("num_comments") or 0) for p in top_stories)
+        sub_scores.append(clamp(best_comments / 500))
+
+    # HN: Ask HN engagement (people actively seeking info about the product)
+    ask_hn = hn.get("ask_hn_count", 0) or 0
+    sub_scores.append(clamp(ask_hn / 50))
 
     # Reddit: best post score (50k+ = 1.0)
     top_reddit = reddit.get("top_posts", []) or []
@@ -158,12 +177,12 @@ def score_product_sentiment(hn: dict, reddit: dict, github: dict) -> float:
         best_reddit_score = max((p.get("score") or 0) for p in top_reddit)
         sub_scores.append(clamp(best_reddit_score / 50000))
 
-    # GitHub: low open_issues/stars = healthy product (inverted: fewer issues per star = better)
+    # GitHub: low open_issues/stars = healthy product (inverted)
     stars = github.get("stars", 0) or 0
     open_issues = github.get("open_issues", 0) or 0
     if stars > 0:
         ratio = open_issues / stars
-        sub_scores.append(clamp(1 - ratio * 10))  # 0.1 issues/star = 0.0, 0 = 1.0
+        sub_scores.append(clamp(1 - ratio * 10))
 
     return sum(sub_scores) / len(sub_scores) if sub_scores else 0.0
 
@@ -195,16 +214,28 @@ def score_brand_signal(twitter: dict) -> float:
 
 def score_founder_signal(hn: dict, linkedin: dict) -> float:
     """
-    Signals: HN founder mentions, LinkedIn headcount (as proxy for team quality signal)
+    Signals: HN founder story mentions, founder HN karma, founder submission quality
     """
+    import math
     sub_scores = []
 
-    founder_mentions = hn.get("founder_mention_count", 0) or 0
-    sub_scores.append(clamp(founder_mentions / 200))  # 200+ = 1.0
+    # Founder name mentions in HN stories (200+ = 1.0)
+    founder_mentions = hn.get("founder_story_mention_count", 0) or 0
+    sub_scores.append(clamp(founder_mentions / 200))
 
-    # Placeholder: without direct founder profile data, use company follower count as signal
+    # Founder HN profiles (karma + submission quality)
+    profiles = hn.get("founder_profiles", []) or []
+    for p in profiles:
+        karma = p.get("karma") or 0
+        if karma > 0:
+            sub_scores.append(clamp(math.log10(karma + 1) / 5))  # log10(100k karma) = 5
+        top_subs = p.get("top_submissions", []) or []
+        if top_subs:
+            best_pts = max((s.get("points") or 0) for s in top_subs)
+            sub_scores.append(clamp(best_pts / 1000))
+
+    # LinkedIn follower count as proxy (no LinkedIn data yet)
     followers = linkedin.get("follower_count", 0) or 0
-    import math
     if followers > 0:
         sub_scores.append(clamp(math.log10(followers + 1) / 6))
 
