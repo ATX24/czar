@@ -1,0 +1,672 @@
+{
+  "categories": {
+    "plg_dev_tools": {
+      "label": "PLG / Bottoms-Up Software (Dev Tools & Infrastructure)",
+      "companies": [
+        {
+          "name": "Cursor",
+          "aka": "Anysphere",
+          "github_org": "getcursor",
+          "description": "AI code editor. $29.3B valuation, $1B+ ARR, 2M+ users. Fastest-growing SaaS product in history by some measures. 1,000% YoY growth per Brex data.",
+          "tags": ["ai", "dev-tools", "code-editor"]
+        },
+        {
+          "name": "Lovable",
+          "github_org": null,
+          "description": "AI app builder (Swedish). $200M raise in July 2025. One of the fastest revenue ramps in software history. 'Vibe coding' wave leader.",
+          "tags": ["ai", "dev-tools", "app-builder"]
+        },
+        {
+          "name": "Bolt",
+          "aka": "StackBlitz",
+          "github_org": "stackblitz",
+          "description": "AI full-stack app generation in-browser. Direct Lovable competitor, huge dev adoption.",
+          "tags": ["ai", "dev-tools", "app-builder"]
+        },
+        {
+          "name": "Windsurf",
+          "aka": "Cognition",
+          "github_org": null,
+          "description": "Wild 2025 saga: OpenAI tried to buy for $3B, deal collapsed, Google poached founders for $2.4B, Cognition acquired remaining IP for $250M. Still ranked #1 on LogRocket AI Dev Tool Rankings.",
+          "tags": ["ai", "dev-tools", "code-editor"]
+        },
+        {
+          "name": "Cognition",
+          "aka": "Devin",
+          "github_org": "cognition-ai",
+          "description": "Autonomous AI software engineer. $400M raise at $10.2B valuation (Sep 2025). Grew from $1M to $73M ARR in 9 months.",
+          "tags": ["ai", "dev-tools", "autonomous-agent"]
+        },
+        {
+          "name": "Vercel",
+          "github_org": "vercel",
+          "description": "Next.js platform, default frontend deploy layer. $250M+ raised, ubiquitous in modern web dev.",
+          "tags": ["dev-tools", "hosting", "frontend"]
+        },
+        {
+          "name": "Wiz",
+          "github_org": null,
+          "description": "Cloud security, bottoms-up with security teams. Acquired by Google for ~$32B. One of the biggest SaaS exits ever, in just ~4 years.",
+          "tags": ["security", "cloud", "enterprise"]
+        },
+        {
+          "name": "Supabase",
+          "github_org": "supabase",
+          "description": "Open-source Firebase alternative. Series C, $500M+ valuation. Beloved developer brand.",
+          "tags": ["dev-tools", "database", "backend", "open-source"]
+        },
+        {
+          "name": "Neon",
+          "github_org": "neondatabase",
+          "description": "Serverless Postgres. Strong PLG motion, developer darling.",
+          "tags": ["dev-tools", "database", "serverless"]
+        },
+        {
+          "name": "Replit",
+          "github_org": "replit",
+          "description": "AI-powered coding/app platform. $250M Series C in 2025. Big in education + prototyping.",
+          "tags": ["ai", "dev-tools", "education"]
+        },
+        {
+          "name": "Linear",
+          "github_org": "linear",
+          "description": "Project management that spread virally through eng teams. Cult-favorite brand.",
+          "tags": ["dev-tools", "productivity", "project-management"]
+        },
+        {
+          "name": "Resend",
+          "github_org": "resend",
+          "description": "Email API for devs. Beautiful DX, very fast early traction.",
+          "tags": ["dev-tools", "email", "api"]
+        },
+        {
+          "name": "Val Town",
+          "github_org": "val-town",
+          "description": "Lightweight cloud scripting, cult following.",
+          "tags": ["dev-tools", "scripting", "serverless"]
+        },
+        {
+          "name": "Tonic.ai",
+          "github_org": "tonicai",
+          "description": "Synthetic data for dev/test environments. $47M raised, 500% YoY growth.",
+          "tags": ["dev-tools", "data", "testing"]
+        },
+        {
+          "name": "Stainless",
+          "github_org": "stainless-api",
+          "description": "Platform for high-quality APIs. Sequoia + a16z Series A. Used by OpenAI, Anthropic, others for their SDKs.",
+          "tags": ["dev-tools", "api", "sdk"]
+        },
+        {
+          "name": "Render",
+          "github_org": null,
+          "description": "Cloud platform alternative to AWS/Heroku for indie devs and startups. Strong bottoms-up.",
+          "tags": ["dev-tools", "hosting", "cloud"]
+        },
+        {
+          "name": "Turso",
+          "github_org": "tursodatabase",
+          "description": "Edge database (libSQL). Developer-first, growing fast in the local-first/edge movement.",
+          "tags": ["dev-tools", "database", "edge"]
+        },
+        {
+          "name": "Depot",
+          "github_org": "depot",
+          "description": "Fast container builds for CI/CD. Small but fast-growing dev infra.",
+          "tags": ["dev-tools", "ci-cd", "containers"]
+        },
+        {
+          "name": "Fly.io",
+          "github_org": "superfly",
+          "description": "Edge app hosting. Strong developer community, very PLG.",
+          "tags": ["dev-tools", "hosting", "edge"]
+        },
+        {
+          "name": "Gamma",
+          "github_org": null,
+          "description": "AI-powered presentations/docs. Exploded virally, millions of users. Not pure dev tool but extremely PLG.",
+          "tags": ["ai", "productivity", "presentations"]
+        },
+        {
+          "name": "Granola",
+          "github_org": null,
+          "description": "AI meeting notes. Classic PLG viral loop through team sharing.",
+          "tags": ["ai", "productivity", "meetings"]
+        },
+        {
+          "name": "Raycast",
+          "github_org": "raycast",
+          "description": "Productivity launcher (Mac). Replaced Alfred/Spotlight for devs, growing into a platform.",
+          "tags": ["dev-tools", "productivity", "mac"]
+        }
+      ]
+    },
+    "enterprise_software": {
+      "label": "Enterprise Software",
+      "companies": [
+        {
+          "name": "Databricks",
+          "github_org": "databricks",
+          "description": "$134B valuation, $4.8B revenue run rate, 55%+ YoY growth. The enterprise data/AI platform. Raised $4B Series L.",
+          "tags": ["enterprise", "data", "ai", "analytics"]
+        },
+        {
+          "name": "Stripe",
+          "github_org": "stripe",
+          "description": "Still private, still growing, still the payments default. IPO speculation constant.",
+          "tags": ["fintech", "payments", "api"]
+        },
+        {
+          "name": "Vanta",
+          "github_org": null,
+          "description": "Automated compliance. $2.45B valuation. Every startup uses it.",
+          "tags": ["enterprise", "compliance", "security"]
+        },
+        {
+          "name": "Rippling",
+          "github_org": null,
+          "description": "HR/IT/finance compound startup. $13B+ valuation. Parker Conrad's compound startup thesis.",
+          "tags": ["enterprise", "hr", "fintech"]
+        },
+        {
+          "name": "Ramp",
+          "github_org": null,
+          "description": "Corporate cards and spend management. Growing faster than Brex.",
+          "tags": ["fintech", "enterprise", "spend-management"]
+        },
+        {
+          "name": "Glean",
+          "github_org": null,
+          "description": "Enterprise AI search. $4.6B valuation. Selling to Fortune 500.",
+          "tags": ["ai", "enterprise", "search"]
+        },
+        {
+          "name": "Harvey",
+          "github_org": null,
+          "description": "AI for legal. $300M Series D at $3B valuation (Feb 2025). Sequoia-led. Used by top law firms globally.",
+          "tags": ["ai", "legal", "enterprise"]
+        },
+        {
+          "name": "Mercor",
+          "github_org": null,
+          "description": "AI hiring/talent matching. Exploded to $2B+ valuation at insane speed.",
+          "tags": ["ai", "hr", "hiring"]
+        },
+        {
+          "name": "Sierra",
+          "github_org": null,
+          "description": "Bret Taylor + Clay Bavor. AI customer service. $4B+ valuation pre-PMF on founder pedigree alone.",
+          "tags": ["ai", "customer-service", "enterprise"]
+        },
+        {
+          "name": "Hebbia",
+          "github_org": null,
+          "description": "AI for finance/knowledge work. $130M Series B from a16z.",
+          "tags": ["ai", "finance", "enterprise"]
+        },
+        {
+          "name": "Writer",
+          "github_org": null,
+          "description": "Enterprise generative AI platform. 'Safe' enterprise LLM layer positioning.",
+          "tags": ["ai", "enterprise", "llm"]
+        },
+        {
+          "name": "Decagon",
+          "github_org": null,
+          "description": "AI customer support automation. $250M raise (March 2026), half a billion total. Coatue + Index co-led.",
+          "tags": ["ai", "customer-service", "enterprise"]
+        },
+        {
+          "name": "Clay",
+          "github_org": null,
+          "description": "GTM data enrichment/automation. Viral among revenue teams. Classic PLG-to-enterprise motion.",
+          "tags": ["gtm", "data", "sales"]
+        },
+        {
+          "name": "Celonis",
+          "github_org": null,
+          "description": "Process mining at scale. 700+ enterprise customers. European breakout.",
+          "tags": ["enterprise", "process-mining", "analytics"]
+        },
+        {
+          "name": "Gong",
+          "github_org": null,
+          "description": "Revenue intelligence. Still dominant in the conversation intelligence space.",
+          "tags": ["enterprise", "sales", "ai"]
+        },
+        {
+          "name": "Fivetran",
+          "github_org": "fivetran",
+          "description": "Data integration/ETL. Quiet giant, massive enterprise footprint.",
+          "tags": ["enterprise", "data", "etl"]
+        },
+        {
+          "name": "Gusto",
+          "github_org": null,
+          "description": "HR/payroll for SMBs. Steady compounder with massive market.",
+          "tags": ["hr", "payroll", "smb"]
+        },
+        {
+          "name": "Uniphore",
+          "github_org": null,
+          "description": "Enterprise AI. $260M Series F at $2.5B valuation (Oct 2025). Nvidia, Snowflake, Databricks as investors.",
+          "tags": ["ai", "enterprise", "voice"]
+        },
+        {
+          "name": "Legora",
+          "github_org": null,
+          "description": "Legal AI (Swedish). Hit unicorn status at $1.8B after raising $150M. 400+ law firms across 40 markets.",
+          "tags": ["ai", "legal", "enterprise"]
+        },
+        {
+          "name": "7AI",
+          "github_org": null,
+          "description": "AI cybersecurity agents. $130M Series A (Dec 2025). Index Ventures led. Founded 2024, already massive round.",
+          "tags": ["ai", "security", "enterprise"]
+        },
+        {
+          "name": "Polymarket",
+          "github_org": null,
+          "description": "Prediction markets. Huge 2024 election moment, now a real platform.",
+          "tags": ["fintech", "prediction-markets", "crypto"]
+        },
+        {
+          "name": "Kalshi",
+          "github_org": null,
+          "description": "Prediction/event contracts exchange.",
+          "tags": ["fintech", "prediction-markets"]
+        }
+      ]
+    },
+    "ai_llm_labs": {
+      "label": "AI-Native / LLM / Labs",
+      "companies": [
+        {
+          "name": "OpenAI",
+          "github_org": "openai",
+          "description": "$500B valuation (Oct 2025 secondary). $40B raise in March 2025. Projecting $20B ARR by 2026.",
+          "tags": ["ai", "llm", "lab"]
+        },
+        {
+          "name": "Anthropic",
+          "github_org": "anthropics",
+          "description": "$183B valuation. $14.3B+ total funding including $13B Series F (Sep 2025). Claude. Safety-focused frontier lab.",
+          "tags": ["ai", "llm", "lab", "safety"]
+        },
+        {
+          "name": "xAI",
+          "aka": "Grok",
+          "github_org": null,
+          "description": "Elon's lab. $20B raise in Jan 2026 from Nvidia, Cisco, Fidelity. ~$200B estimated valuation.",
+          "tags": ["ai", "llm", "lab"]
+        },
+        {
+          "name": "Mistral",
+          "github_org": "mistralai",
+          "description": "French AI lab. $6B+ valuation. Open-weight models challenging US dominance. Nvidia + ASML backed.",
+          "tags": ["ai", "llm", "lab", "open-source"]
+        },
+        {
+          "name": "Perplexity",
+          "github_org": "perplexityai",
+          "description": "AI-native search. $9B+ valuation. Genuine threat to Google's core product.",
+          "tags": ["ai", "search", "consumer"]
+        },
+        {
+          "name": "Cohere",
+          "github_org": "cohere-ai",
+          "description": "Enterprise LLM provider. Strong in RAG and enterprise deployments.",
+          "tags": ["ai", "llm", "enterprise"]
+        },
+        {
+          "name": "ElevenLabs",
+          "github_org": "elevenlabs",
+          "description": "AI voice generation. $180M Series C at $3B+ valuation (Jan 2025). Went viral, scaled incredibly fast.",
+          "tags": ["ai", "voice", "consumer"]
+        },
+        {
+          "name": "Runway",
+          "github_org": "runwayml",
+          "description": "AI video generation. Used in Hollywood. Pioneer of the category.",
+          "tags": ["ai", "video", "creative"]
+        },
+        {
+          "name": "Poolside",
+          "github_org": null,
+          "description": "$500M at $3B valuation before launching a product.",
+          "tags": ["ai", "coding", "lab"]
+        },
+        {
+          "name": "Sesame",
+          "github_org": null,
+          "description": "Voice AI. $250M Series B co-led by Sequoia and Spark (Oct 2025). Went viral with realistic voice demos.",
+          "tags": ["ai", "voice", "consumer"]
+        },
+        {
+          "name": "Fal",
+          "github_org": "fal-ai",
+          "description": "Generative media platform. $140M Series D at $4.5B (Dec 2025). Sequoia-led.",
+          "tags": ["ai", "media", "infrastructure"]
+        },
+        {
+          "name": "Unconventional AI",
+          "github_org": null,
+          "description": "Rethinking computing foundations for AI. $475M seed round (Dec 2025) at ~$4.5B. Lightspeed + a16z.",
+          "tags": ["ai", "hardware", "research"]
+        },
+        {
+          "name": "Suno",
+          "github_org": null,
+          "description": "AI music creation. Raised fundamental questions about authorship. Fast consumer adoption.",
+          "tags": ["ai", "music", "creative"]
+        },
+        {
+          "name": "LMArena",
+          "github_org": null,
+          "description": "AI evaluation/benchmarking platform. $1.7B valuation in under 4 months. $150M Series A (Jan 2026).",
+          "tags": ["ai", "benchmarking", "evaluation"]
+        },
+        {
+          "name": "Genspark",
+          "github_org": null,
+          "description": "All-in-one AI workspace. $275M Series B at $1.25B (Nov 2025).",
+          "tags": ["ai", "productivity", "workspace"]
+        },
+        {
+          "name": "Fireworks AI",
+          "github_org": "fw-ai",
+          "description": "Open-source model deployment platform. $250M Series C at $4B (Oct 2025).",
+          "tags": ["ai", "infrastructure", "inference"]
+        },
+        {
+          "name": "SSI",
+          "aka": "Safe Superintelligence Inc.",
+          "github_org": null,
+          "description": "Ilya Sutskever's post-OpenAI company. $1B raised pre-product. Pure research bet on superintelligence safety.",
+          "tags": ["ai", "safety", "research"]
+        },
+        {
+          "name": "Hippocratic AI",
+          "github_org": null,
+          "description": "LLMs for healthcare. $141M Series B at $1.6B+ (Jan 2025). Kleiner Perkins led.",
+          "tags": ["ai", "healthcare", "enterprise"]
+        },
+        {
+          "name": "Sakana AI",
+          "github_org": "SakanaAI",
+          "description": "Tokyo-based, nature-inspired AI research. Founded by ex-Google Brain researchers. Raised $300M+.",
+          "tags": ["ai", "research", "lab"]
+        },
+        {
+          "name": "Deepgram",
+          "github_org": "deepgram",
+          "description": "Enterprise voice AI. $130M Series C (Jan 2026).",
+          "tags": ["ai", "voice", "enterprise"]
+        },
+        {
+          "name": "Merge Labs",
+          "github_org": null,
+          "description": "Sam Altman's brain-computer interface startup. $250M seed round in early 2026. OpenAI as lead investor.",
+          "tags": ["bci", "hardware", "frontier"]
+        },
+        {
+          "name": "Physical Intelligence",
+          "aka": "Pi",
+          "github_org": "Physical-Intelligence",
+          "description": "Robot foundation models. $400M at $2.4B in first year.",
+          "tags": ["robotics", "ai", "foundation-models"]
+        }
+      ]
+    },
+    "hardware_software_hybrids": {
+      "label": "Hardware + Software Hybrids",
+      "companies": [
+        {
+          "name": "CoreWeave",
+          "github_org": "coreweave",
+          "description": "GPU cloud. Pivoted from crypto mining to $35B+ IPO. One of the wildest trajectory stories in tech.",
+          "tags": ["cloud", "gpu", "infrastructure"]
+        },
+        {
+          "name": "Groq",
+          "github_org": "groq",
+          "description": "Custom LPU inference chips. $2.8B valuation. Went viral with speed demos.",
+          "tags": ["hardware", "inference", "chips"]
+        },
+        {
+          "name": "Base Power Company",
+          "github_org": null,
+          "description": "Distributed natural gas generators for data centers. $200M+ raised, $2.5B+ valuation in ~2 years. Austin-based.",
+          "tags": ["energy", "infrastructure", "data-centers"]
+        },
+        {
+          "name": "Saronic",
+          "github_org": null,
+          "description": "Autonomous naval vessels. $600M+ raised (a16z Series C), $4B valuation. Austin-based.",
+          "tags": ["defense", "autonomous", "naval"]
+        },
+        {
+          "name": "Cerebras",
+          "github_org": "Cerebras",
+          "description": "Wafer-scale AI chips. Filed to IPO. Competing with Nvidia on inference.",
+          "tags": ["hardware", "chips", "ai"]
+        },
+        {
+          "name": "Together AI",
+          "github_org": "togethercomputer",
+          "description": "AI cloud inference/training. $3B+ valuation.",
+          "tags": ["ai", "cloud", "infrastructure"]
+        },
+        {
+          "name": "Lambda",
+          "github_org": "LambdaLabsML",
+          "description": "GPU cloud for AI training. $800M raised.",
+          "tags": ["cloud", "gpu", "ai"]
+        },
+        {
+          "name": "Gecko Robotics",
+          "github_org": null,
+          "description": "Wall-climbing infrastructure inspection robots. Unicorn status June 2025 at $1.25B. Founders Fund + YC backed. Pittsburgh.",
+          "tags": ["robotics", "inspection", "infrastructure"]
+        },
+        {
+          "name": "Radiant Nuclear",
+          "github_org": null,
+          "description": "Portable nuclear microreactors for clean energy. El Segundo, CA.",
+          "tags": ["energy", "nuclear", "deep-tech"]
+        },
+        {
+          "name": "Astranis",
+          "github_org": null,
+          "description": "Small, low-cost telecom satellites for remote internet. Raised $350M+.",
+          "tags": ["space", "telecom", "satellites"]
+        },
+        {
+          "name": "Skild AI",
+          "github_org": null,
+          "description": "Foundation models for robotics. $1.4B growth round in Jan 2026. One of the largest robotics raises ever.",
+          "tags": ["robotics", "ai", "foundation-models"]
+        },
+        {
+          "name": "Arc Boat Company",
+          "github_org": null,
+          "description": "Electric vessels. $50M Series C (March 2026). Moving from consumer to defense/commercial. a16z backed.",
+          "tags": ["electric", "maritime", "defense"]
+        },
+        {
+          "name": "Helion Energy",
+          "github_org": null,
+          "description": "Fusion power. Backed by Sam Altman. Building the world's first fusion power plant (contracted with Microsoft).",
+          "tags": ["energy", "fusion", "deep-tech"]
+        },
+        {
+          "name": "QuEra Computing",
+          "github_org": "QuEraComputing",
+          "description": "Quantum computing. $230M Series B in 2025.",
+          "tags": ["quantum", "computing", "deep-tech"]
+        },
+        {
+          "name": "HawkEye 360",
+          "github_org": null,
+          "description": "RF geospatial intelligence from space. $150M Series E (late 2025). Defense + commercial.",
+          "tags": ["space", "defense", "geospatial"]
+        },
+        {
+          "name": "Sierra Space",
+          "github_org": null,
+          "description": "Orbital vehicles and space infrastructure. Defense + NASA contracts.",
+          "tags": ["space", "defense", "infrastructure"]
+        },
+        {
+          "name": "Claros",
+          "github_org": null,
+          "description": "Chip-level data center power infrastructure. $30M seed (March 2026). Former IBM engineers.",
+          "tags": ["hardware", "infrastructure", "data-centers"]
+        },
+        {
+          "name": "Icarus",
+          "github_org": null,
+          "description": "Autonomous solar-powered aircraft at 60,000 feet. Modern U-2 spy plane, $100K each, built by the thousands. YC-backed.",
+          "tags": ["defense", "autonomous", "aircraft"]
+        },
+        {
+          "name": "Sorcerer",
+          "github_org": null,
+          "description": "High-altitude balloon weather sensors. 1000x more data than existing systems. Already used daily by meteorologists.",
+          "tags": ["weather", "sensors", "deep-tech"]
+        },
+        {
+          "name": "Velontra",
+          "github_org": null,
+          "description": "Hypersonic space plane with horizontal takeoff. Air-breathing propulsion 6x more fuel efficient than rockets.",
+          "tags": ["space", "hypersonic", "deep-tech"]
+        }
+      ]
+    },
+    "pure_hardware_defense": {
+      "label": "Pure Hardware / Deep Tech / Defense",
+      "companies": [
+        {
+          "name": "SpaceX",
+          "github_org": null,
+          "description": "#1 on Setter 30 Q4 2025. $800B tender valuation. Possible IPO in 2026. Starship + Starlink era.",
+          "tags": ["space", "defense", "launch"]
+        },
+        {
+          "name": "Anduril",
+          "github_org": "anduril",
+          "description": "Palmer Luckey's defense tech company. $30.5B valuation. Lattice OS + autonomous drones/missiles.",
+          "tags": ["defense", "autonomous", "ai"]
+        },
+        {
+          "name": "Figure AI",
+          "github_org": null,
+          "description": "Humanoid robotics. $39B valuation (Sep 2025). Fastest path to unicorn in robotics history. Robots deployed at BMW.",
+          "tags": ["robotics", "humanoid", "ai"]
+        },
+        {
+          "name": "1X Technologies",
+          "github_org": null,
+          "description": "Humanoid home robots (NEO). 10,000-unit deployment deal with EQT (2026-2030). Pre-orders at $20,000.",
+          "tags": ["robotics", "humanoid", "consumer"]
+        },
+        {
+          "name": "Agility Robotics",
+          "github_org": null,
+          "description": "Digit humanoid robot. World's first full-scale humanoid robot factory (RoboFab). Deployed at Amazon + Spanx.",
+          "tags": ["robotics", "humanoid", "manufacturing"]
+        },
+        {
+          "name": "Apptronik",
+          "github_org": null,
+          "description": "Humanoid robotics. Austin-based.",
+          "tags": ["robotics", "humanoid"]
+        },
+        {
+          "name": "Hadrian",
+          "github_org": null,
+          "description": "AI-powered precision manufacturing for defense/aerospace. $200M+ Series C.",
+          "tags": ["manufacturing", "defense", "ai"]
+        },
+        {
+          "name": "Impulse Space",
+          "github_org": null,
+          "description": "In-space orbital delivery. Tom Mueller (SpaceX co-founder). $300M+ raised.",
+          "tags": ["space", "launch", "propulsion"]
+        },
+        {
+          "name": "Relativity Space",
+          "github_org": null,
+          "description": "3D-printed rockets. Pivoted to Terran R. $1.2B+ raised.",
+          "tags": ["space", "manufacturing", "launch"]
+        },
+        {
+          "name": "Shield AI",
+          "github_org": null,
+          "description": "Autonomous defense drones with Hivemind AI pilot. $200M+ raised, $2.8B valuation.",
+          "tags": ["defense", "autonomous", "ai"]
+        },
+        {
+          "name": "Hermeus",
+          "github_org": null,
+          "description": "Hypersonic aircraft. Mach 5+ autonomous planes for defense and commercial. USAF contracts.",
+          "tags": ["defense", "hypersonic", "aircraft"]
+        },
+        {
+          "name": "Saildrone",
+          "github_org": null,
+          "description": "Autonomous ocean vehicles for defense, climate, and maritime data. 100+ vehicles deployed globally.",
+          "tags": ["defense", "autonomous", "maritime"]
+        },
+        {
+          "name": "Vast",
+          "github_org": null,
+          "description": "Commercial space station (Haven-1). Launching the first commercial space station.",
+          "tags": ["space", "infrastructure"]
+        },
+        {
+          "name": "Joby Aviation",
+          "github_org": null,
+          "description": "eVTOL air taxi. Publicly traded. FAA certification path, Toyota-backed manufacturing.",
+          "tags": ["evtol", "transportation", "aviation"]
+        },
+        {
+          "name": "Archer Aviation",
+          "github_org": null,
+          "description": "eVTOL competitor to Joby. Manufacturing facility in Georgia. United Airlines partnership.",
+          "tags": ["evtol", "transportation", "aviation"]
+        },
+        {
+          "name": "Reliable Robotics",
+          "github_org": null,
+          "description": "Autonomous cargo aircraft. FAA certification pursuit for pilotless commercial flights.",
+          "tags": ["autonomous", "aviation", "cargo"]
+        },
+        {
+          "name": "Redwood Materials",
+          "github_org": null,
+          "description": "Battery recycling. JB Straubel (Tesla co-founder). $1B+ raised.",
+          "tags": ["energy", "recycling", "batteries"]
+        },
+        {
+          "name": "Zetta Energy",
+          "github_org": null,
+          "description": "Next-gen AI chips ('XPUs'). Building the next Nvidia with reconfigurable, energy-efficient processors. YC-backed.",
+          "tags": ["hardware", "chips", "ai"]
+        },
+        {
+          "name": "Northvolt",
+          "github_org": null,
+          "description": "European battery manufacturing giant. Raised 14 rounds. Building Europe's battery supply chain independence.",
+          "tags": ["energy", "batteries", "manufacturing"]
+        },
+        {
+          "name": "Oklo",
+          "github_org": null,
+          "description": "Advanced fission nuclear. Sam Altman as chairman. Public via SPAC. Micro-reactor approach for data centers.",
+          "tags": ["energy", "nuclear", "deep-tech"]
+        }
+      ]
+    }
+  }
+}

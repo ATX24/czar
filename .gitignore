@@ -15,7 +15,11 @@ ENV/
 # Data files
 *.duckdb
 *.duckdb.wal
-data/
+data/raw/
+# Allow schema + company list but not raw scraped data
+!data/
+!data/companies.json
+!data/schema.json
 
 # IDE
 .idea/
