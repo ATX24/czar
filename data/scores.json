@@ -1,11 +1,11 @@
 [
   {
     "company": "1x_technologies",
-    "scored_at": "2026-04-15T06:27:03.456820+00:00",
-    "composite_score": 0.92,
+    "scored_at": "2026-04-15T21:24:47.856430+00:00",
+    "composite_score": 6.94,
     "dimensions": {
       "organic_growth": 0.5,
-      "funding_velocity": 0.0,
+      "funding_velocity": 40.17,
       "revenue_proxies": 0.0,
       "product_sentiment": 4.1,
       "brand_signal": 0.0,
@@ -19,24 +19,35 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": 1123500000.0,
+      "last_valuation_usd": null,
+      "num_funding_rounds": 3,
+      "last_funding_at": "2025-09",
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": false,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "7ai",
-    "scored_at": "2026-04-15T06:27:03.457170+00:00",
-    "composite_score": 30.81,
+    "scored_at": "2026-04-15T21:24:47.857407+00:00",
+    "composite_score": 34.09,
     "dimensions": {
-      "organic_growth": 72.18,
-      "funding_velocity": 0.0,
+      "organic_growth": 49.74,
+      "funding_velocity": 61.3,
       "revenue_proxies": 0.0,
-      "product_sentiment": 81.87,
+      "product_sentiment": 74.72,
       "brand_signal": 0.0,
       "founder_signal": 0.0
     },
@@ -48,21 +59,32 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": 2460600000.0,
+      "last_valuation_usd": null,
+      "num_funding_rounds": 9,
+      "last_funding_at": "2025-03",
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": false,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "agility_robotics",
-    "scored_at": "2026-04-15T06:27:03.457286+00:00",
-    "composite_score": 13.58,
+    "scored_at": "2026-04-15T21:24:47.857927+00:00",
+    "composite_score": 12.94,
     "dimensions": {
-      "organic_growth": 29.81,
+      "organic_growth": 26.59,
       "funding_velocity": 0.0,
       "revenue_proxies": 0.0,
       "product_sentiment": 38.1,
@@ -77,21 +99,32 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": null,
+      "last_valuation_usd": null,
+      "num_funding_rounds": null,
+      "last_funding_at": null,
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": false,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "anduril",
-    "scored_at": "2026-04-15T06:27:03.457429+00:00",
-    "composite_score": 14.32,
+    "scored_at": "2026-04-15T21:24:47.858614+00:00",
+    "composite_score": 14.31,
     "dimensions": {
-      "organic_growth": 41.62,
+      "organic_growth": 41.57,
       "funding_velocity": 0.0,
       "revenue_proxies": 0.0,
       "product_sentiment": 29.99,
@@ -106,22 +139,33 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": null,
+      "last_valuation_usd": null,
+      "num_funding_rounds": null,
+      "last_funding_at": null,
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": true,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "anthropic",
-    "scored_at": "2026-04-15T06:27:03.457566+00:00",
-    "composite_score": 28.2,
+    "scored_at": "2026-04-15T21:24:47.859571+00:00",
+    "composite_score": 37.7,
     "dimensions": {
       "organic_growth": 47.07,
-      "funding_velocity": 0.0,
+      "funding_velocity": 63.33,
       "revenue_proxies": 0.0,
       "product_sentiment": 93.9,
       "brand_signal": 0.0,
@@ -135,21 +179,32 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": 47530000000.0,
+      "last_valuation_usd": null,
+      "num_funding_rounds": 9,
+      "last_funding_at": "2026",
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": true,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "apptronik",
-    "scored_at": "2026-04-15T06:27:03.457646+00:00",
-    "composite_score": 1.14,
+    "scored_at": "2026-04-15T21:24:47.860032+00:00",
+    "composite_score": 1.26,
     "dimensions": {
-      "organic_growth": 0.56,
+      "organic_growth": 1.17,
       "funding_velocity": 0.0,
       "revenue_proxies": 0.0,
       "product_sentiment": 5.15,
@@ -164,24 +219,35 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": null,
+      "last_valuation_usd": null,
+      "num_funding_rounds": null,
+      "last_funding_at": null,
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": false,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "arc_boat_company",
-    "scored_at": "2026-04-15T06:27:03.457720+00:00",
-    "composite_score": 0.37,
+    "scored_at": "2026-04-15T21:24:47.860405+00:00",
+    "composite_score": 6.78,
     "dimensions": {
-      "organic_growth": 1.73,
-      "funding_velocity": 0.0,
+      "organic_growth": 0.0,
+      "funding_velocity": 45.2,
       "revenue_proxies": 0.0,
-      "product_sentiment": 0.13,
+      "product_sentiment": 0.0,
       "brand_signal": 0.0,
       "founder_signal": 0.0
     },
@@ -193,22 +259,33 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": 364250000.0,
+      "last_valuation_usd": null,
+      "num_funding_rounds": 5,
+      "last_funding_at": "2027",
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": false,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "archer_aviation",
-    "scored_at": "2026-04-15T06:27:03.457804+00:00",
-    "composite_score": 0.39,
+    "scored_at": "2026-04-15T21:24:47.860771+00:00",
+    "composite_score": 6.07,
     "dimensions": {
-      "organic_growth": 1.15,
-      "funding_velocity": 0.0,
+      "organic_growth": 0.88,
+      "funding_velocity": 38.19,
       "revenue_proxies": 0.0,
       "product_sentiment": 0.82,
       "brand_signal": 0.0,
@@ -222,18 +299,29 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": 286000000.0,
+      "last_valuation_usd": null,
+      "num_funding_rounds": 3,
+      "last_funding_at": "2025-11",
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": false,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "astranis",
-    "scored_at": "2026-04-15T06:27:03.457893+00:00",
+    "scored_at": "2026-04-15T21:24:47.861145+00:00",
     "composite_score": 8.58,
     "dimensions": {
       "organic_growth": 1.46,
@@ -251,18 +339,29 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": null,
+      "last_valuation_usd": null,
+      "num_funding_rounds": null,
+      "last_funding_at": null,
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": false,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "base_power_company",
-    "scored_at": "2026-04-15T06:27:03.457987+00:00",
+    "scored_at": "2026-04-15T21:24:47.861514+00:00",
     "composite_score": 18.45,
     "dimensions": {
       "organic_growth": 17.34,
@@ -280,21 +379,32 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": null,
+      "last_valuation_usd": null,
+      "num_funding_rounds": null,
+      "last_funding_at": null,
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": false,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "bolt",
-    "scored_at": "2026-04-15T06:27:03.458111+00:00",
-    "composite_score": 30.92,
+    "scored_at": "2026-04-15T21:24:47.862097+00:00",
+    "composite_score": 30.88,
     "dimensions": {
-      "organic_growth": 68.5,
+      "organic_growth": 68.3,
       "funding_velocity": 0.0,
       "revenue_proxies": 0.0,
       "product_sentiment": 86.08,
@@ -309,24 +419,35 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": null,
+      "last_valuation_usd": null,
+      "num_funding_rounds": null,
+      "last_funding_at": null,
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": true,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "celonis",
-    "scored_at": "2026-04-15T06:27:03.458203+00:00",
-    "composite_score": 17.81,
+    "scored_at": "2026-04-15T21:24:47.862494+00:00",
+    "composite_score": 28.86,
     "dimensions": {
-      "organic_growth": 43.11,
-      "funding_velocity": 0.0,
+      "organic_growth": 57.98,
+      "funding_velocity": 47.7,
       "revenue_proxies": 0.0,
-      "product_sentiment": 45.92,
+      "product_sentiment": 50.57,
       "brand_signal": 0.0,
       "founder_signal": 0.0
     },
@@ -338,24 +459,35 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": 2047500000.0,
+      "last_valuation_usd": null,
+      "num_funding_rounds": 5,
+      "last_funding_at": "2026",
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": false,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "cerebras",
-    "scored_at": "2026-04-15T06:27:03.458315+00:00",
-    "composite_score": 22.51,
+    "scored_at": "2026-04-15T21:24:47.863037+00:00",
+    "composite_score": 28.34,
     "dimensions": {
       "organic_growth": 52.21,
-      "funding_velocity": 0.0,
+      "funding_velocity": 56.67,
       "revenue_proxies": 0.0,
-      "product_sentiment": 60.32,
+      "product_sentiment": 46.98,
       "brand_signal": 0.0,
       "founder_signal": 0.0
     },
@@ -366,25 +498,36 @@
       "product_sentiment": 0.2,
       "brand_signal": 0.15,
       "founder_signal": 0.15
+    },
+    "funding_summary": {
+      "total_funding_usd": 19519000000.0,
+      "last_valuation_usd": null,
+      "num_funding_rounds": 7,
+      "last_funding_at": "2025-09",
+      "tier1_investor_count": 0,
+      "investors": []
     },
     "data_available": {
       "github": true,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "claros",
-    "scored_at": "2026-04-15T06:27:03.458396+00:00",
-    "composite_score": 15.32,
+    "scored_at": "2026-04-15T21:24:47.863372+00:00",
+    "composite_score": 15.19,
     "dimensions": {
       "organic_growth": 42.94,
       "funding_velocity": 0.0,
       "revenue_proxies": 0.0,
-      "product_sentiment": 33.67,
+      "product_sentiment": 33.0,
       "brand_signal": 0.0,
       "founder_signal": 0.0
     },
@@ -396,24 +539,35 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": null,
+      "last_valuation_usd": null,
+      "num_funding_rounds": null,
+      "last_funding_at": null,
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": false,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "clay",
-    "scored_at": "2026-04-15T06:27:03.458480+00:00",
-    "composite_score": 23.23,
+    "scored_at": "2026-04-15T21:24:47.863713+00:00",
+    "composite_score": 22.37,
     "dimensions": {
-      "organic_growth": 53.13,
+      "organic_growth": 52.18,
       "funding_velocity": 0.0,
       "revenue_proxies": 0.0,
-      "product_sentiment": 63.0,
+      "product_sentiment": 59.67,
       "brand_signal": 0.0,
       "founder_signal": 0.0
     },
@@ -425,18 +579,29 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": null,
+      "last_valuation_usd": null,
+      "num_funding_rounds": null,
+      "last_funding_at": null,
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": false,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "cognition",
-    "scored_at": "2026-04-15T06:27:03.458563+00:00",
+    "scored_at": "2026-04-15T21:24:47.864068+00:00",
     "composite_score": 25.7,
     "dimensions": {
       "organic_growth": 53.49,
@@ -454,22 +619,33 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": null,
+      "last_valuation_usd": null,
+      "num_funding_rounds": null,
+      "last_funding_at": null,
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": false,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "cohere",
-    "scored_at": "2026-04-15T06:27:03.458674+00:00",
-    "composite_score": 25.47,
+    "scored_at": "2026-04-15T21:24:47.864639+00:00",
+    "composite_score": 31.82,
     "dimensions": {
-      "organic_growth": 46.79,
-      "funding_velocity": 0.0,
+      "organic_growth": 40.5,
+      "funding_velocity": 50.75,
       "revenue_proxies": 0.0,
       "product_sentiment": 80.55,
       "brand_signal": 0.0,
@@ -483,22 +659,33 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": 1675000000.0,
+      "last_valuation_usd": null,
+      "num_funding_rounds": 6,
+      "last_funding_at": "2025",
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": true,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "coreweave",
-    "scored_at": "2026-04-15T06:27:03.458783+00:00",
-    "composite_score": 7.58,
+    "scored_at": "2026-04-15T21:24:47.865193+00:00",
+    "composite_score": 17.18,
     "dimensions": {
-      "organic_growth": 16.27,
-      "funding_velocity": 0.0,
+      "organic_growth": 14.31,
+      "funding_velocity": 66.67,
       "revenue_proxies": 0.0,
       "product_sentiment": 21.61,
       "brand_signal": 0.0,
@@ -512,22 +699,33 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": 56378600000.0,
+      "last_valuation_usd": null,
+      "num_funding_rounds": 17,
+      "last_funding_at": "2026-04",
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": true,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "cursor",
-    "scored_at": "2026-04-15T06:27:03.458901+00:00",
-    "composite_score": 30.59,
+    "scored_at": "2026-04-15T21:24:47.865924+00:00",
+    "composite_score": 35.35,
     "dimensions": {
-      "organic_growth": 59.1,
-      "funding_velocity": 0.0,
+      "organic_growth": 54.45,
+      "funding_velocity": 37.88,
       "revenue_proxies": 0.0,
       "product_sentiment": 93.87,
       "brand_signal": 0.0,
@@ -541,22 +739,33 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": 2308000000.0,
+      "last_valuation_usd": null,
+      "num_funding_rounds": 2,
+      "last_funding_at": "2025-11",
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": true,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "databricks",
-    "scored_at": "2026-04-15T06:27:03.459019+00:00",
-    "composite_score": 14.6,
+    "scored_at": "2026-04-15T21:24:47.866461+00:00",
+    "composite_score": 20.6,
     "dimensions": {
       "organic_growth": 32.83,
-      "funding_velocity": 0.0,
+      "funding_velocity": 40.0,
       "revenue_proxies": 0.0,
       "product_sentiment": 40.16,
       "brand_signal": 0.0,
@@ -570,24 +779,35 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": 28013900000.0,
+      "last_valuation_usd": null,
+      "num_funding_rounds": 2,
+      "last_funding_at": "2021-02",
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": true,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "decagon",
-    "scored_at": "2026-04-15T06:27:03.459098+00:00",
-    "composite_score": 18.37,
+    "scored_at": "2026-04-15T21:24:47.866775+00:00",
+    "composite_score": 32.36,
     "dimensions": {
-      "organic_growth": 27.39,
+      "organic_growth": 66.03,
       "funding_velocity": 0.0,
       "revenue_proxies": 0.0,
-      "product_sentiment": 64.45,
+      "product_sentiment": 95.78,
       "brand_signal": 0.0,
       "founder_signal": 0.0
     },
@@ -598,25 +818,36 @@
       "product_sentiment": 0.2,
       "brand_signal": 0.15,
       "founder_signal": 0.15
+    },
+    "funding_summary": {
+      "total_funding_usd": null,
+      "last_valuation_usd": null,
+      "num_funding_rounds": null,
+      "last_funding_at": null,
+      "tier1_investor_count": 0,
+      "investors": []
     },
     "data_available": {
       "github": false,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "deepgram",
-    "scored_at": "2026-04-15T06:27:03.459207+00:00",
-    "composite_score": 14.53,
+    "scored_at": "2026-04-15T21:24:47.867360+00:00",
+    "composite_score": 15.91,
     "dimensions": {
-      "organic_growth": 31.93,
+      "organic_growth": 29.97,
       "funding_velocity": 0.0,
       "revenue_proxies": 0.0,
-      "product_sentiment": 40.74,
+      "product_sentiment": 49.59,
       "brand_signal": 0.0,
       "founder_signal": 0.0
     },
@@ -628,24 +859,35 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": null,
+      "last_valuation_usd": null,
+      "num_funding_rounds": null,
+      "last_funding_at": null,
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": true,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "depot",
-    "scored_at": "2026-04-15T06:27:03.459322+00:00",
-    "composite_score": 25.92,
+    "scored_at": "2026-04-15T21:24:47.867967+00:00",
+    "composite_score": 23.77,
     "dimensions": {
-      "organic_growth": 55.81,
+      "organic_growth": 55.73,
       "funding_velocity": 0.0,
       "revenue_proxies": 0.0,
-      "product_sentiment": 73.77,
+      "product_sentiment": 63.1,
       "brand_signal": 0.0,
       "founder_signal": 0.0
     },
@@ -657,24 +899,35 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": null,
+      "last_valuation_usd": null,
+      "num_funding_rounds": null,
+      "last_funding_at": null,
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": true,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "elevenlabs",
-    "scored_at": "2026-04-15T06:27:03.459439+00:00",
-    "composite_score": 19.9,
+    "scored_at": "2026-04-15T21:24:47.868528+00:00",
+    "composite_score": 27.68,
     "dimensions": {
-      "organic_growth": 33.87,
-      "funding_velocity": 0.0,
+      "organic_growth": 35.78,
+      "funding_velocity": 50.0,
       "revenue_proxies": 0.0,
-      "product_sentiment": 65.61,
+      "product_sentiment": 65.11,
       "brand_signal": 0.0,
       "founder_signal": 0.0
     },
@@ -686,24 +939,35 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": 13121000000.0,
+      "last_valuation_usd": null,
+      "num_funding_rounds": 5,
+      "last_funding_at": "2026-03",
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": true,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "fal",
-    "scored_at": "2026-04-15T06:27:03.459553+00:00",
-    "composite_score": 29.78,
+    "scored_at": "2026-04-15T21:24:47.869128+00:00",
+    "composite_score": 13.84,
     "dimensions": {
-      "organic_growth": 62.43,
+      "organic_growth": 34.36,
       "funding_velocity": 0.0,
       "revenue_proxies": 0.0,
-      "product_sentiment": 86.49,
+      "product_sentiment": 34.82,
       "brand_signal": 0.0,
       "founder_signal": 0.0
     },
@@ -715,22 +979,33 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": null,
+      "last_valuation_usd": null,
+      "num_funding_rounds": null,
+      "last_funding_at": null,
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": true,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "figure_ai",
-    "scored_at": "2026-04-15T06:27:03.459643+00:00",
-    "composite_score": 25.62,
+    "scored_at": "2026-04-15T21:24:47.869511+00:00",
+    "composite_score": 30.58,
     "dimensions": {
-      "organic_growth": 55.57,
-      "funding_velocity": 0.0,
+      "organic_growth": 53.19,
+      "funding_velocity": 36.24,
       "revenue_proxies": 0.0,
       "product_sentiment": 72.52,
       "brand_signal": 0.0,
@@ -744,24 +1019,35 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": 745000000.0,
+      "last_valuation_usd": null,
+      "num_funding_rounds": 2,
+      "last_funding_at": "2024-02",
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": false,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "fireworks_ai",
-    "scored_at": "2026-04-15T06:27:03.459757+00:00",
-    "composite_score": 9.42,
+    "scored_at": "2026-04-15T21:24:47.870059+00:00",
+    "composite_score": 17.02,
     "dimensions": {
       "organic_growth": 12.35,
-      "funding_velocity": 0.0,
+      "funding_velocity": 50.0,
       "revenue_proxies": 0.0,
-      "product_sentiment": 34.76,
+      "product_sentiment": 35.26,
       "brand_signal": 0.0,
       "founder_signal": 0.0
     },
@@ -773,21 +1059,32 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": 11434700000.0,
+      "last_valuation_usd": null,
+      "num_funding_rounds": 5,
+      "last_funding_at": "2025",
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": true,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "fivetran",
-    "scored_at": "2026-04-15T06:27:03.459848+00:00",
-    "composite_score": 15.16,
+    "scored_at": "2026-04-15T21:24:47.870379+00:00",
+    "composite_score": 15.61,
     "dimensions": {
-      "organic_growth": 42.42,
+      "organic_growth": 44.65,
       "funding_velocity": 0.0,
       "revenue_proxies": 0.0,
       "product_sentiment": 33.4,
@@ -802,18 +1099,29 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": null,
+      "last_valuation_usd": null,
+      "num_funding_rounds": null,
+      "last_funding_at": null,
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": false,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "fly.io",
-    "scored_at": "2026-04-15T06:27:03.459963+00:00",
+    "scored_at": "2026-04-15T21:24:47.870899+00:00",
     "composite_score": 20.45,
     "dimensions": {
       "organic_growth": 43.45,
@@ -831,18 +1139,29 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": null,
+      "last_valuation_usd": null,
+      "num_funding_rounds": null,
+      "last_funding_at": null,
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": true,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "gamma",
-    "scored_at": "2026-04-15T06:27:03.460064+00:00",
+    "scored_at": "2026-04-15T21:24:47.871263+00:00",
     "composite_score": 22.78,
     "dimensions": {
       "organic_growth": 52.79,
@@ -860,24 +1179,35 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": null,
+      "last_valuation_usd": null,
+      "num_funding_rounds": null,
+      "last_funding_at": null,
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": false,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "gecko_robotics",
-    "scored_at": "2026-04-15T06:27:03.460166+00:00",
-    "composite_score": 0.84,
+    "scored_at": "2026-04-15T21:24:47.871594+00:00",
+    "composite_score": 0.61,
     "dimensions": {
-      "organic_growth": 1.23,
+      "organic_growth": 0.96,
       "funding_velocity": 0.0,
       "revenue_proxies": 0.0,
-      "product_sentiment": 2.95,
+      "product_sentiment": 2.08,
       "brand_signal": 0.0,
       "founder_signal": 0.0
     },
@@ -889,22 +1219,33 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": null,
+      "last_valuation_usd": null,
+      "num_funding_rounds": null,
+      "last_funding_at": null,
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": false,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "genspark",
-    "scored_at": "2026-04-15T06:27:03.460254+00:00",
-    "composite_score": 7.92,
+    "scored_at": "2026-04-15T21:24:47.872017+00:00",
+    "composite_score": 17.27,
     "dimensions": {
       "organic_growth": 10.31,
-      "funding_velocity": 0.0,
+      "funding_velocity": 62.34,
       "revenue_proxies": 0.0,
       "product_sentiment": 29.27,
       "brand_signal": 0.0,
@@ -918,21 +1259,32 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": 503050000.0,
+      "last_valuation_usd": null,
+      "num_funding_rounds": 19,
+      "last_funding_at": "2026",
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": false,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "glean",
-    "scored_at": "2026-04-15T06:27:03.460336+00:00",
-    "composite_score": 25.33,
+    "scored_at": "2026-04-15T21:24:47.872386+00:00",
+    "composite_score": 24.75,
     "dimensions": {
-      "organic_growth": 60.05,
+      "organic_growth": 57.11,
       "funding_velocity": 0.0,
       "revenue_proxies": 0.0,
       "product_sentiment": 66.62,
@@ -947,18 +1299,29 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": null,
+      "last_valuation_usd": null,
+      "num_funding_rounds": null,
+      "last_funding_at": null,
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": false,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "gong",
-    "scored_at": "2026-04-15T06:27:03.460419+00:00",
+    "scored_at": "2026-04-15T21:24:47.872731+00:00",
     "composite_score": 18.65,
     "dimensions": {
       "organic_growth": 50.92,
@@ -976,24 +1339,35 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": null,
+      "last_valuation_usd": null,
+      "num_funding_rounds": null,
+      "last_funding_at": null,
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": false,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "granola",
-    "scored_at": "2026-04-15T06:27:03.460510+00:00",
-    "composite_score": 24.75,
+    "scored_at": "2026-04-15T21:24:47.873071+00:00",
+    "composite_score": 24.32,
     "dimensions": {
-      "organic_growth": 60.95,
+      "organic_growth": 51.98,
       "funding_velocity": 0.0,
       "revenue_proxies": 0.0,
-      "product_sentiment": 62.8,
+      "product_sentiment": 69.6,
       "brand_signal": 0.0,
       "founder_signal": 0.0
     },
@@ -1004,25 +1378,36 @@
       "product_sentiment": 0.2,
       "brand_signal": 0.15,
       "founder_signal": 0.15
+    },
+    "funding_summary": {
+      "total_funding_usd": null,
+      "last_valuation_usd": null,
+      "num_funding_rounds": null,
+      "last_funding_at": null,
+      "tier1_investor_count": 0,
+      "investors": []
     },
     "data_available": {
       "github": false,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "groq",
-    "scored_at": "2026-04-15T06:27:03.460618+00:00",
-    "composite_score": 26.46,
+    "scored_at": "2026-04-15T21:24:47.873598+00:00",
+    "composite_score": 32.14,
     "dimensions": {
-      "organic_growth": 53.41,
-      "funding_velocity": 0.0,
+      "organic_growth": 53.61,
+      "funding_velocity": 50.0,
       "revenue_proxies": 0.0,
-      "product_sentiment": 78.92,
+      "product_sentiment": 69.58,
       "brand_signal": 0.0,
       "founder_signal": 0.0
     },
@@ -1034,18 +1419,29 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": 22450000000.0,
+      "last_valuation_usd": null,
+      "num_funding_rounds": 5,
+      "last_funding_at": "2025-12",
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": true,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "gusto",
-    "scored_at": "2026-04-15T06:27:03.460698+00:00",
+    "scored_at": "2026-04-15T21:24:47.873948+00:00",
     "composite_score": 23.17,
     "dimensions": {
       "organic_growth": 51.68,
@@ -1063,24 +1459,35 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": null,
+      "last_valuation_usd": null,
+      "num_funding_rounds": null,
+      "last_funding_at": null,
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": false,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "hadrian",
-    "scored_at": "2026-04-15T06:27:03.460783+00:00",
-    "composite_score": 27.06,
+    "scored_at": "2026-04-15T21:24:47.874363+00:00",
+    "composite_score": 4.13,
     "dimensions": {
-      "organic_growth": 54.63,
+      "organic_growth": 2.94,
       "funding_velocity": 0.0,
       "revenue_proxies": 0.0,
-      "product_sentiment": 80.67,
+      "product_sentiment": 17.72,
       "brand_signal": 0.0,
       "founder_signal": 0.0
     },
@@ -1092,21 +1499,32 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": null,
+      "last_valuation_usd": null,
+      "num_funding_rounds": null,
+      "last_funding_at": null,
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": false,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "harvey",
-    "scored_at": "2026-04-15T06:27:03.460881+00:00",
-    "composite_score": 19.93,
+    "scored_at": "2026-04-15T21:24:47.874747+00:00",
+    "composite_score": 19.61,
     "dimensions": {
-      "organic_growth": 53.31,
+      "organic_growth": 51.72,
       "funding_velocity": 0.0,
       "revenue_proxies": 0.0,
       "product_sentiment": 46.33,
@@ -1121,22 +1539,33 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": null,
+      "last_valuation_usd": null,
+      "num_funding_rounds": null,
+      "last_funding_at": null,
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": false,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "hawkeye_360",
-    "scored_at": "2026-04-15T06:27:03.460959+00:00",
-    "composite_score": 4.01,
+    "scored_at": "2026-04-15T21:24:47.875111+00:00",
+    "composite_score": 10.96,
     "dimensions": {
       "organic_growth": 0.7,
-      "funding_velocity": 0.0,
+      "funding_velocity": 46.33,
       "revenue_proxies": 0.0,
       "product_sentiment": 19.35,
       "brand_signal": 0.0,
@@ -1150,22 +1579,33 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": 792000000.0,
+      "last_valuation_usd": null,
+      "num_funding_rounds": 5,
+      "last_funding_at": "2023-10",
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": false,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "hebbia",
-    "scored_at": "2026-04-15T06:27:03.461059+00:00",
-    "composite_score": 5.04,
+    "scored_at": "2026-04-15T21:24:47.875462+00:00",
+    "composite_score": 10.79,
     "dimensions": {
       "organic_growth": 21.4,
-      "funding_velocity": 0.0,
+      "funding_velocity": 38.35,
       "revenue_proxies": 0.0,
       "product_sentiment": 3.78,
       "brand_signal": 0.0,
@@ -1179,22 +1619,33 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": 320000000.0,
+      "last_valuation_usd": null,
+      "num_funding_rounds": 3,
+      "last_funding_at": "2024",
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": false,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "helion_energy",
-    "scored_at": "2026-04-15T06:27:03.461154+00:00",
-    "composite_score": 5.75,
+    "scored_at": "2026-04-15T21:24:47.875809+00:00",
+    "composite_score": 11.56,
     "dimensions": {
-      "organic_growth": 4.71,
-      "funding_velocity": 0.0,
+      "organic_growth": 3.14,
+      "funding_velocity": 40.84,
       "revenue_proxies": 0.0,
       "product_sentiment": 24.03,
       "brand_signal": 0.0,
@@ -1208,24 +1659,35 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": 1784800000.0,
+      "last_valuation_usd": null,
+      "num_funding_rounds": 3,
+      "last_funding_at": "2021-11",
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": false,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "hermeus",
-    "scored_at": "2026-04-15T06:27:03.461324+00:00",
-    "composite_score": 18.36,
+    "scored_at": "2026-04-15T21:24:47.876164+00:00",
+    "composite_score": 6.16,
     "dimensions": {
-      "organic_growth": 51.21,
-      "funding_velocity": 0.0,
+      "organic_growth": 1.84,
+      "funding_velocity": 34.01,
       "revenue_proxies": 0.0,
-      "product_sentiment": 40.62,
+      "product_sentiment": 3.45,
       "brand_signal": 0.0,
       "founder_signal": 0.0
     },
@@ -1237,18 +1699,29 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": 160000000.0,
+      "last_valuation_usd": null,
+      "num_funding_rounds": 2,
+      "last_funding_at": "2022-03",
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": false,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "hippocratic_ai",
-    "scored_at": "2026-04-15T06:27:03.461403+00:00",
+    "scored_at": "2026-04-15T21:24:47.876516+00:00",
     "composite_score": 0.81,
     "dimensions": {
       "organic_growth": 0.68,
@@ -1266,24 +1739,35 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": null,
+      "last_valuation_usd": null,
+      "num_funding_rounds": null,
+      "last_funding_at": null,
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": false,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "icarus",
-    "scored_at": "2026-04-15T06:27:03.461496+00:00",
-    "composite_score": 12.49,
+    "scored_at": "2026-04-15T21:24:47.876860+00:00",
+    "composite_score": 6.3,
     "dimensions": {
-      "organic_growth": 31.08,
+      "organic_growth": 10.71,
       "funding_velocity": 0.0,
       "revenue_proxies": 0.0,
-      "product_sentiment": 31.38,
+      "product_sentiment": 20.78,
       "brand_signal": 0.0,
       "founder_signal": 0.0
     },
@@ -1295,18 +1779,29 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": null,
+      "last_valuation_usd": null,
+      "num_funding_rounds": null,
+      "last_funding_at": null,
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": false,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "impulse_space",
-    "scored_at": "2026-04-15T06:27:03.461583+00:00",
+    "scored_at": "2026-04-15T21:24:47.877243+00:00",
     "composite_score": 3.06,
     "dimensions": {
       "organic_growth": 8.14,
@@ -1324,24 +1819,35 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": null,
+      "last_valuation_usd": null,
+      "num_funding_rounds": null,
+      "last_funding_at": null,
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": false,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "joby_aviation",
-    "scored_at": "2026-04-15T06:27:03.461661+00:00",
-    "composite_score": 6.24,
+    "scored_at": "2026-04-15T21:24:47.877581+00:00",
+    "composite_score": 23.51,
     "dimensions": {
-      "organic_growth": 8.69,
-      "funding_velocity": 0.0,
+      "organic_growth": 40.57,
+      "funding_velocity": 43.25,
       "revenue_proxies": 0.0,
-      "product_sentiment": 22.48,
+      "product_sentiment": 44.55,
       "brand_signal": 0.0,
       "founder_signal": 0.0
     },
@@ -1353,22 +1859,33 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": 946000000.0,
+      "last_valuation_usd": null,
+      "num_funding_rounds": 4,
+      "last_funding_at": "2025-08",
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": false,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "kalshi",
-    "scored_at": "2026-04-15T06:27:03.461759+00:00",
-    "composite_score": 21.27,
+    "scored_at": "2026-04-15T21:24:47.877935+00:00",
+    "composite_score": 26.77,
     "dimensions": {
       "organic_growth": 51.43,
-      "funding_velocity": 0.0,
+      "funding_velocity": 36.67,
       "revenue_proxies": 0.0,
       "product_sentiment": 54.92,
       "brand_signal": 0.0,
@@ -1382,21 +1899,32 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": 11000000000.0,
+      "last_valuation_usd": null,
+      "num_funding_rounds": 1,
+      "last_funding_at": null,
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": false,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "lambda",
-    "scored_at": "2026-04-15T06:27:03.461873+00:00",
-    "composite_score": 31.01,
+    "scored_at": "2026-04-15T21:24:47.878481+00:00",
+    "composite_score": 29.24,
     "dimensions": {
-      "organic_growth": 80.57,
+      "organic_growth": 71.72,
       "funding_velocity": 0.0,
       "revenue_proxies": 0.0,
       "product_sentiment": 74.5,
@@ -1411,22 +1939,33 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": null,
+      "last_valuation_usd": null,
+      "num_funding_rounds": null,
+      "last_funding_at": null,
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": true,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "legora",
-    "scored_at": "2026-04-15T06:27:03.461972+00:00",
-    "composite_score": 18.76,
+    "scored_at": "2026-04-15T21:24:47.878838+00:00",
+    "composite_score": 25.6,
     "dimensions": {
-      "organic_growth": 33.05,
-      "funding_velocity": 0.0,
+      "organic_growth": 29.72,
+      "funding_velocity": 50.0,
       "revenue_proxies": 0.0,
       "product_sentiment": 60.77,
       "brand_signal": 0.0,
@@ -1440,21 +1979,32 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": 11434700000.0,
+      "last_valuation_usd": null,
+      "num_funding_rounds": 5,
+      "last_funding_at": "2025",
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": false,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "linear",
-    "scored_at": "2026-04-15T06:27:03.462086+00:00",
-    "composite_score": 26.68,
+    "scored_at": "2026-04-15T21:24:47.879367+00:00",
+    "composite_score": 26.65,
     "dimensions": {
-      "organic_growth": 57.01,
+      "organic_growth": 56.86,
       "funding_velocity": 0.0,
       "revenue_proxies": 0.0,
       "product_sentiment": 76.39,
@@ -1469,22 +2019,33 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": null,
+      "last_valuation_usd": null,
+      "num_funding_rounds": null,
+      "last_funding_at": null,
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": true,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "lmarena",
-    "scored_at": "2026-04-15T06:27:03.462165+00:00",
-    "composite_score": 20.02,
+    "scored_at": "2026-04-15T21:24:47.879714+00:00",
+    "composite_score": 26.46,
     "dimensions": {
-      "organic_growth": 42.56,
-      "funding_velocity": 0.0,
+      "organic_growth": 52.27,
+      "funding_velocity": 30.0,
       "revenue_proxies": 0.0,
       "product_sentiment": 57.53,
       "brand_signal": 0.0,
@@ -1498,18 +2059,29 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": 100000000.0,
+      "last_valuation_usd": null,
+      "num_funding_rounds": 1,
+      "last_funding_at": null,
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": false,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "lovable",
-    "scored_at": "2026-04-15T06:27:03.462243+00:00",
+    "scored_at": "2026-04-15T21:24:47.879972+00:00",
     "composite_score": 24.34,
     "dimensions": {
       "organic_growth": 51.69,
@@ -1527,22 +2099,33 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": null,
+      "last_valuation_usd": null,
+      "num_funding_rounds": null,
+      "last_funding_at": null,
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": false,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "mercor",
-    "scored_at": "2026-04-15T06:27:03.462324+00:00",
-    "composite_score": 25.66,
+    "scored_at": "2026-04-15T21:24:47.880326+00:00",
+    "composite_score": 31.09,
     "dimensions": {
-      "organic_growth": 57.77,
-      "funding_velocity": 0.0,
+      "organic_growth": 57.43,
+      "funding_velocity": 36.67,
       "revenue_proxies": 0.0,
       "product_sentiment": 70.53,
       "brand_signal": 0.0,
@@ -1556,22 +2139,33 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": 10000000000.0,
+      "last_valuation_usd": null,
+      "num_funding_rounds": 1,
+      "last_funding_at": null,
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": false,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "merge_labs",
-    "scored_at": "2026-04-15T06:27:03.462406+00:00",
-    "composite_score": 28.72,
+    "scored_at": "2026-04-15T21:24:47.880679+00:00",
+    "composite_score": 33.26,
     "dimensions": {
-      "organic_growth": 54.6,
-      "funding_velocity": 0.0,
+      "organic_growth": 53.8,
+      "funding_velocity": 31.33,
       "revenue_proxies": 0.0,
       "product_sentiment": 89.0,
       "brand_signal": 0.0,
@@ -1585,18 +2179,29 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": 250000000.0,
+      "last_valuation_usd": null,
+      "num_funding_rounds": 1,
+      "last_funding_at": "2024-01",
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": false,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "mistral",
-    "scored_at": "2026-04-15T06:27:03.462513+00:00",
+    "scored_at": "2026-04-15T21:24:47.881256+00:00",
     "composite_score": 26.64,
     "dimensions": {
       "organic_growth": 36.26,
@@ -1614,24 +2219,35 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": null,
+      "last_valuation_usd": null,
+      "num_funding_rounds": null,
+      "last_funding_at": null,
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": true,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "neon",
-    "scored_at": "2026-04-15T06:27:03.462629+00:00",
-    "composite_score": 27.89,
+    "scored_at": "2026-04-15T21:24:47.881780+00:00",
+    "composite_score": 25.0,
     "dimensions": {
-      "organic_growth": 60.13,
+      "organic_growth": 48.03,
       "funding_velocity": 0.0,
       "revenue_proxies": 0.0,
-      "product_sentiment": 79.31,
+      "product_sentiment": 76.96,
       "brand_signal": 0.0,
       "founder_signal": 0.0
     },
@@ -1642,25 +2258,36 @@
       "product_sentiment": 0.2,
       "brand_signal": 0.15,
       "founder_signal": 0.15
+    },
+    "funding_summary": {
+      "total_funding_usd": null,
+      "last_valuation_usd": null,
+      "num_funding_rounds": null,
+      "last_funding_at": null,
+      "tier1_investor_count": 0,
+      "investors": []
     },
     "data_available": {
       "github": true,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "northvolt",
-    "scored_at": "2026-04-15T06:27:03.462726+00:00",
-    "composite_score": 8.5,
+    "scored_at": "2026-04-15T21:24:47.882116+00:00",
+    "composite_score": 17.97,
     "dimensions": {
-      "organic_growth": 5.82,
-      "funding_velocity": 0.0,
+      "organic_growth": 7.49,
+      "funding_velocity": 60.0,
       "revenue_proxies": 0.0,
-      "product_sentiment": 36.68,
+      "product_sentiment": 37.35,
       "brand_signal": 0.0,
       "founder_signal": 0.0
     },
@@ -1672,24 +2299,35 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": 14506790000.0,
+      "last_valuation_usd": null,
+      "num_funding_rounds": 8,
+      "last_funding_at": "2025",
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": false,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "oklo",
-    "scored_at": "2026-04-15T06:27:03.462866+00:00",
-    "composite_score": 29.31,
+    "scored_at": "2026-04-15T21:24:47.882570+00:00",
+    "composite_score": 5.85,
     "dimensions": {
-      "organic_growth": 55.07,
+      "organic_growth": 4.32,
       "funding_velocity": 0.0,
       "revenue_proxies": 0.0,
-      "product_sentiment": 91.48,
+      "product_sentiment": 24.95,
       "brand_signal": 0.0,
       "founder_signal": 0.0
     },
@@ -1701,22 +2339,33 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": null,
+      "last_valuation_usd": null,
+      "num_funding_rounds": null,
+      "last_funding_at": null,
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": false,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "openai",
-    "scored_at": "2026-04-15T06:27:03.463019+00:00",
-    "composite_score": 36.37,
+    "scored_at": "2026-04-15T21:24:47.883108+00:00",
+    "composite_score": 45.87,
     "dimensions": {
       "organic_growth": 83.86,
-      "funding_velocity": 0.0,
+      "funding_velocity": 63.33,
       "revenue_proxies": 0.0,
       "product_sentiment": 98.0,
       "brand_signal": 0.0,
@@ -1730,22 +2379,33 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": 1433950000000.0,
+      "last_valuation_usd": null,
+      "num_funding_rounds": 9,
+      "last_funding_at": "2026-04",
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": true,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "perplexity",
-    "scored_at": "2026-04-15T06:27:03.463140+00:00",
-    "composite_score": 26.73,
+    "scored_at": "2026-04-15T21:24:47.883658+00:00",
+    "composite_score": 33.58,
     "dimensions": {
-      "organic_growth": 42.2,
-      "funding_velocity": 0.0,
+      "organic_growth": 41.46,
+      "funding_velocity": 46.67,
       "revenue_proxies": 0.0,
       "product_sentiment": 91.44,
       "brand_signal": 0.0,
@@ -1759,24 +2419,35 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": 49415000000.0,
+      "last_valuation_usd": null,
+      "num_funding_rounds": 4,
+      "last_funding_at": "2026-01",
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": true,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "physical_intelligence",
-    "scored_at": "2026-04-15T06:27:03.463251+00:00",
-    "composite_score": 18.03,
+    "scored_at": "2026-04-15T21:24:47.884054+00:00",
+    "composite_score": 27.14,
     "dimensions": {
-      "organic_growth": 29.28,
-      "funding_velocity": 0.0,
+      "organic_growth": 34.07,
+      "funding_velocity": 36.67,
       "revenue_proxies": 0.0,
-      "product_sentiment": 60.88,
+      "product_sentiment": 74.12,
       "brand_signal": 0.0,
       "founder_signal": 0.0
     },
@@ -1787,25 +2458,36 @@
       "product_sentiment": 0.2,
       "brand_signal": 0.15,
       "founder_signal": 0.15
+    },
+    "funding_summary": {
+      "total_funding_usd": 1000000000.0,
+      "last_valuation_usd": null,
+      "num_funding_rounds": 2,
+      "last_funding_at": "2025",
+      "tier1_investor_count": 0,
+      "investors": []
     },
     "data_available": {
       "github": true,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "polymarket",
-    "scored_at": "2026-04-15T06:27:03.463333+00:00",
-    "composite_score": 26.57,
+    "scored_at": "2026-04-15T21:24:47.884426+00:00",
+    "composite_score": 33.97,
     "dimensions": {
       "organic_growth": 52.09,
-      "funding_velocity": 0.0,
+      "funding_velocity": 60.0,
       "revenue_proxies": 0.0,
-      "product_sentiment": 80.77,
+      "product_sentiment": 72.77,
       "brand_signal": 0.0,
       "founder_signal": 0.0
     },
@@ -1817,21 +2499,32 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": 20598400000.0,
+      "last_valuation_usd": null,
+      "num_funding_rounds": 8,
+      "last_funding_at": "2025-10",
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": false,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "poolside",
-    "scored_at": "2026-04-15T06:27:03.463408+00:00",
-    "composite_score": 12.63,
+    "scored_at": "2026-04-15T21:24:47.884781+00:00",
+    "composite_score": 13.31,
     "dimensions": {
-      "organic_growth": 12.13,
+      "organic_growth": 15.56,
       "funding_velocity": 0.0,
       "revenue_proxies": 0.0,
       "product_sentiment": 51.0,
@@ -1846,22 +2539,33 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": null,
+      "last_valuation_usd": null,
+      "num_funding_rounds": null,
+      "last_funding_at": null,
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": false,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "quera_computing",
-    "scored_at": "2026-04-15T06:27:03.463515+00:00",
-    "composite_score": 9.05,
+    "scored_at": "2026-04-15T21:24:47.885299+00:00",
+    "composite_score": 14.55,
     "dimensions": {
       "organic_growth": 30.81,
-      "funding_velocity": 0.0,
+      "funding_velocity": 36.69,
       "revenue_proxies": 0.0,
       "product_sentiment": 14.43,
       "brand_signal": 0.0,
@@ -1875,24 +2579,35 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": 1017000000.0,
+      "last_valuation_usd": null,
+      "num_funding_rounds": 2,
+      "last_funding_at": "2025",
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": true,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "radiant_nuclear",
-    "scored_at": "2026-04-15T06:27:03.463587+00:00",
-    "composite_score": 3.05,
+    "scored_at": "2026-04-15T21:24:47.885606+00:00",
+    "composite_score": 2.91,
     "dimensions": {
       "organic_growth": 0.68,
       "funding_velocity": 0.0,
       "revenue_proxies": 0.0,
-      "product_sentiment": 14.55,
+      "product_sentiment": 13.88,
       "brand_signal": 0.0,
       "founder_signal": 0.0
     },
@@ -1904,21 +2619,32 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": null,
+      "last_valuation_usd": null,
+      "num_funding_rounds": null,
+      "last_funding_at": null,
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": false,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "ramp",
-    "scored_at": "2026-04-15T06:27:03.463666+00:00",
-    "composite_score": 27.6,
+    "scored_at": "2026-04-15T21:24:47.885971+00:00",
+    "composite_score": 26.98,
     "dimensions": {
-      "organic_growth": 61.33,
+      "organic_growth": 58.25,
       "funding_velocity": 0.0,
       "revenue_proxies": 0.0,
       "product_sentiment": 76.65,
@@ -1933,18 +2659,29 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": null,
+      "last_valuation_usd": null,
+      "num_funding_rounds": null,
+      "last_funding_at": null,
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": false,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "raycast",
-    "scored_at": "2026-04-15T06:27:03.463780+00:00",
+    "scored_at": "2026-04-15T21:24:47.886537+00:00",
     "composite_score": 21.71,
     "dimensions": {
       "organic_growth": 44.85,
@@ -1962,22 +2699,33 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": null,
+      "last_valuation_usd": null,
+      "num_funding_rounds": null,
+      "last_funding_at": null,
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": true,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "redwood_materials",
-    "scored_at": "2026-04-15T06:27:03.463859+00:00",
-    "composite_score": 3.42,
+    "scored_at": "2026-04-15T21:24:47.886932+00:00",
+    "composite_score": 9.79,
     "dimensions": {
-      "organic_growth": 2.21,
-      "funding_velocity": 0.0,
+      "organic_growth": 2.08,
+      "funding_velocity": 42.66,
       "revenue_proxies": 0.0,
       "product_sentiment": 14.87,
       "brand_signal": 0.0,
@@ -1991,24 +2739,35 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": 6275000000.0,
+      "last_valuation_usd": null,
+      "num_funding_rounds": 3,
+      "last_funding_at": "2024-01",
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": false,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "relativity_space",
-    "scored_at": "2026-04-15T06:27:03.463945+00:00",
-    "composite_score": 26.34,
+    "scored_at": "2026-04-15T21:24:47.887198+00:00",
+    "composite_score": 28.84,
     "dimensions": {
-      "organic_growth": 51.8,
-      "funding_velocity": 0.0,
+      "organic_growth": 50.47,
+      "funding_velocity": 33.6,
       "revenue_proxies": 0.0,
-      "product_sentiment": 79.88,
+      "product_sentiment": 68.52,
       "brand_signal": 0.0,
       "founder_signal": 0.0
     },
@@ -2020,24 +2779,35 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": 1200000000.0,
+      "last_valuation_usd": null,
+      "num_funding_rounds": 1,
+      "last_funding_at": null,
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": false,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "reliable_robotics",
-    "scored_at": "2026-04-15T06:27:03.464041+00:00",
-    "composite_score": 8.62,
+    "scored_at": "2026-04-15T21:24:47.887550+00:00",
+    "composite_score": 9.55,
     "dimensions": {
       "organic_growth": 21.94,
       "funding_velocity": 0.0,
       "revenue_proxies": 0.0,
-      "product_sentiment": 21.15,
+      "product_sentiment": 25.82,
       "brand_signal": 0.0,
       "founder_signal": 0.0
     },
@@ -2049,24 +2819,35 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": null,
+      "last_valuation_usd": null,
+      "num_funding_rounds": null,
+      "last_funding_at": null,
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": false,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "render",
-    "scored_at": "2026-04-15T06:27:03.464141+00:00",
-    "composite_score": 35.24,
+    "scored_at": "2026-04-15T21:24:47.887878+00:00",
+    "composite_score": 25.86,
     "dimensions": {
-      "organic_growth": 78.82,
+      "organic_growth": 55.6,
       "funding_velocity": 0.0,
       "revenue_proxies": 0.0,
-      "product_sentiment": 97.4,
+      "product_sentiment": 73.7,
       "brand_signal": 0.0,
       "founder_signal": 0.0
     },
@@ -2078,18 +2859,29 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": null,
+      "last_valuation_usd": null,
+      "num_funding_rounds": null,
+      "last_funding_at": null,
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": false,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "replit",
-    "scored_at": "2026-04-15T06:27:03.464257+00:00",
+    "scored_at": "2026-04-15T21:24:47.888429+00:00",
     "composite_score": 26.68,
     "dimensions": {
       "organic_growth": 33.38,
@@ -2107,18 +2899,29 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": null,
+      "last_valuation_usd": null,
+      "num_funding_rounds": null,
+      "last_funding_at": null,
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": true,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "resend",
-    "scored_at": "2026-04-15T06:27:03.464370+00:00",
+    "scored_at": "2026-04-15T21:24:47.888935+00:00",
     "composite_score": 26.34,
     "dimensions": {
       "organic_growth": 52.6,
@@ -2136,18 +2939,29 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": null,
+      "last_valuation_usd": null,
+      "num_funding_rounds": null,
+      "last_funding_at": null,
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": true,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "rippling",
-    "scored_at": "2026-04-15T06:27:03.464458+00:00",
+    "scored_at": "2026-04-15T21:24:47.889274+00:00",
     "composite_score": 24.19,
     "dimensions": {
       "organic_growth": 53.27,
@@ -2165,24 +2979,35 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": null,
+      "last_valuation_usd": null,
+      "num_funding_rounds": null,
+      "last_funding_at": null,
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": false,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "runway",
-    "scored_at": "2026-04-15T06:27:03.464582+00:00",
-    "composite_score": 25.46,
+    "scored_at": "2026-04-15T21:24:47.889791+00:00",
+    "composite_score": 25.21,
     "dimensions": {
-      "organic_growth": 53.08,
+      "organic_growth": 52.03,
       "funding_velocity": 0.0,
       "revenue_proxies": 0.0,
-      "product_sentiment": 74.24,
+      "product_sentiment": 74.03,
       "brand_signal": 0.0,
       "founder_signal": 0.0
     },
@@ -2194,22 +3019,33 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": null,
+      "last_valuation_usd": null,
+      "num_funding_rounds": null,
+      "last_funding_at": null,
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": true,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "saildrone",
-    "scored_at": "2026-04-15T06:27:03.464662+00:00",
-    "composite_score": 2.25,
+    "scored_at": "2026-04-15T21:24:47.890116+00:00",
+    "composite_score": 6.84,
     "dimensions": {
-      "organic_growth": 1.53,
-      "funding_velocity": 0.0,
+      "organic_growth": 1.46,
+      "funding_velocity": 30.68,
       "revenue_proxies": 0.0,
       "product_sentiment": 9.72,
       "brand_signal": 0.0,
@@ -2223,22 +3059,33 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": 160000000.0,
+      "last_valuation_usd": null,
+      "num_funding_rounds": 1,
+      "last_funding_at": null,
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": false,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "sakana_ai",
-    "scored_at": "2026-04-15T06:27:03.464775+00:00",
-    "composite_score": 6.3,
+    "scored_at": "2026-04-15T21:24:47.890615+00:00",
+    "composite_score": 11.48,
     "dimensions": {
       "organic_growth": 9.36,
-      "funding_velocity": 0.0,
+      "funding_velocity": 34.54,
       "revenue_proxies": 0.0,
       "product_sentiment": 22.13,
       "brand_signal": 0.0,
@@ -2252,24 +3099,35 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": 230000000.0,
+      "last_valuation_usd": null,
+      "num_funding_rounds": 2,
+      "last_funding_at": "2024",
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": true,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "saronic",
-    "scored_at": "2026-04-15T06:27:03.464862+00:00",
-    "composite_score": 18.5,
+    "scored_at": "2026-04-15T21:24:47.890984+00:00",
+    "composite_score": 17.86,
     "dimensions": {
-      "organic_growth": 37.5,
+      "organic_growth": 13.85,
       "funding_velocity": 0.0,
       "revenue_proxies": 0.0,
-      "product_sentiment": 55.02,
+      "product_sentiment": 75.45,
       "brand_signal": 0.0,
       "founder_signal": 0.0
     },
@@ -2281,24 +3139,35 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": null,
+      "last_valuation_usd": null,
+      "num_funding_rounds": null,
+      "last_funding_at": null,
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": false,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "sesame",
-    "scored_at": "2026-04-15T06:27:03.464948+00:00",
-    "composite_score": 17.53,
+    "scored_at": "2026-04-15T21:24:47.891217+00:00",
+    "composite_score": 14.5,
     "dimensions": {
-      "organic_growth": 44.95,
+      "organic_growth": 33.13,
       "funding_velocity": 0.0,
       "revenue_proxies": 0.0,
-      "product_sentiment": 42.7,
+      "product_sentiment": 39.37,
       "brand_signal": 0.0,
       "founder_signal": 0.0
     },
@@ -2310,24 +3179,35 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": null,
+      "last_valuation_usd": null,
+      "num_funding_rounds": null,
+      "last_funding_at": null,
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": false,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "shield_ai",
-    "scored_at": "2026-04-15T06:27:03.465035+00:00",
-    "composite_score": 24.21,
+    "scored_at": "2026-04-15T21:24:47.891460+00:00",
+    "composite_score": 24.79,
     "dimensions": {
-      "organic_growth": 61.78,
-      "funding_velocity": 0.0,
+      "organic_growth": 50.64,
+      "funding_velocity": 41.47,
       "revenue_proxies": 0.0,
-      "product_sentiment": 59.27,
+      "product_sentiment": 42.2,
       "brand_signal": 0.0,
       "founder_signal": 0.0
     },
@@ -2339,21 +3219,32 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": 2767200000.0,
+      "last_valuation_usd": null,
+      "num_funding_rounds": 3,
+      "last_funding_at": "2023-10",
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": false,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "sierra",
-    "scored_at": "2026-04-15T06:27:03.465120+00:00",
-    "composite_score": 31.8,
+    "scored_at": "2026-04-15T21:24:47.891793+00:00",
+    "composite_score": 28.73,
     "dimensions": {
-      "organic_growth": 59.01,
+      "organic_growth": 43.63,
       "funding_velocity": 0.0,
       "revenue_proxies": 0.0,
       "product_sentiment": 100.0,
@@ -2368,22 +3259,33 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": null,
+      "last_valuation_usd": null,
+      "num_funding_rounds": null,
+      "last_funding_at": null,
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": false,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "sierra_space",
-    "scored_at": "2026-04-15T06:27:03.465207+00:00",
-    "composite_score": 5.69,
+    "scored_at": "2026-04-15T21:24:47.892014+00:00",
+    "composite_score": 12.14,
     "dimensions": {
       "organic_growth": 3.29,
-      "funding_velocity": 0.0,
+      "funding_velocity": 43.04,
       "revenue_proxies": 0.0,
       "product_sentiment": 25.13,
       "brand_signal": 0.0,
@@ -2397,18 +3299,29 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": 8152600000.0,
+      "last_valuation_usd": null,
+      "num_funding_rounds": 3,
+      "last_funding_at": "2026-03",
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": false,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "skild_ai",
-    "scored_at": "2026-04-15T06:27:03.465343+00:00",
+    "scored_at": "2026-04-15T21:24:47.892386+00:00",
     "composite_score": 26.87,
     "dimensions": {
       "organic_growth": 52.45,
@@ -2426,24 +3339,35 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": null,
+      "last_valuation_usd": null,
+      "num_funding_rounds": null,
+      "last_funding_at": null,
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": false,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": false,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "sorcerer",
-    "scored_at": "2026-04-15T06:27:03.465432+00:00",
-    "composite_score": 16.52,
+    "scored_at": "2026-04-15T21:24:47.892733+00:00",
+    "composite_score": 6.14,
     "dimensions": {
-      "organic_growth": 51.31,
+      "organic_growth": 11.14,
       "funding_velocity": 0.0,
       "revenue_proxies": 0.0,
-      "product_sentiment": 31.28,
+      "product_sentiment": 19.55,
       "brand_signal": 0.0,
       "founder_signal": 0.0
     },
@@ -2455,22 +3379,33 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": null,
+      "last_valuation_usd": null,
+      "num_funding_rounds": null,
+      "last_funding_at": null,
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": false,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "spacex",
-    "scored_at": "2026-04-15T06:27:03.465525+00:00",
-    "composite_score": 36.67,
+    "scored_at": "2026-04-15T21:24:47.893103+00:00",
+    "composite_score": 43.17,
     "dimensions": {
       "organic_growth": 83.33,
-      "funding_velocity": 0.0,
+      "funding_velocity": 43.33,
       "revenue_proxies": 0.0,
       "product_sentiment": 100.0,
       "brand_signal": 0.0,
@@ -2484,21 +3419,32 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": 272000000000.0,
+      "last_valuation_usd": null,
+      "num_funding_rounds": 3,
+      "last_funding_at": "2025-09",
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": false,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "ssi",
-    "scored_at": "2026-04-15T06:27:03.465610+00:00",
-    "composite_score": 27.97,
+    "scored_at": "2026-04-15T21:24:47.893468+00:00",
+    "composite_score": 27.91,
     "dimensions": {
-      "organic_growth": 52.94,
+      "organic_growth": 52.66,
       "funding_velocity": 0.0,
       "revenue_proxies": 0.0,
       "product_sentiment": 86.9,
@@ -2513,24 +3459,35 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": null,
+      "last_valuation_usd": null,
+      "num_funding_rounds": null,
+      "last_funding_at": null,
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": false,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "stainless",
-    "scored_at": "2026-04-15T06:27:03.465728+00:00",
-    "composite_score": 19.44,
+    "scored_at": "2026-04-15T21:24:47.894074+00:00",
+    "composite_score": 25.7,
     "dimensions": {
-      "organic_growth": 45.93,
+      "organic_growth": 51.9,
       "funding_velocity": 0.0,
       "revenue_proxies": 0.0,
-      "product_sentiment": 51.28,
+      "product_sentiment": 76.62,
       "brand_signal": 0.0,
       "founder_signal": 0.0
     },
@@ -2542,18 +3499,29 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": null,
+      "last_valuation_usd": null,
+      "num_funding_rounds": null,
+      "last_funding_at": null,
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": true,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "stripe",
-    "scored_at": "2026-04-15T06:27:03.465844+00:00",
+    "scored_at": "2026-04-15T21:24:47.894721+00:00",
     "composite_score": 31.38,
     "dimensions": {
       "organic_growth": 61.42,
@@ -2571,24 +3539,35 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": null,
+      "last_valuation_usd": null,
+      "num_funding_rounds": null,
+      "last_funding_at": null,
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": true,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "suno",
-    "scored_at": "2026-04-15T06:27:03.465934+00:00",
-    "composite_score": 32.68,
+    "scored_at": "2026-04-15T21:24:47.895078+00:00",
+    "composite_score": 18.58,
     "dimensions": {
-      "organic_growth": 63.4,
+      "organic_growth": 47.94,
       "funding_velocity": 0.0,
       "revenue_proxies": 0.0,
-      "product_sentiment": 100.0,
+      "product_sentiment": 44.97,
       "brand_signal": 0.0,
       "founder_signal": 0.0
     },
@@ -2600,22 +3579,33 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": null,
+      "last_valuation_usd": null,
+      "num_funding_rounds": null,
+      "last_funding_at": null,
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": false,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "supabase",
-    "scored_at": "2026-04-15T06:27:03.466050+00:00",
-    "composite_score": 30.85,
+    "scored_at": "2026-04-15T21:24:47.895673+00:00",
+    "composite_score": 36.82,
     "dimensions": {
       "organic_growth": 69.2,
-      "funding_velocity": 0.0,
+      "funding_velocity": 39.75,
       "revenue_proxies": 0.0,
       "product_sentiment": 85.08,
       "brand_signal": 0.0,
@@ -2629,18 +3619,29 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": 8400000000.0,
+      "last_valuation_usd": null,
+      "num_funding_rounds": 2,
+      "last_funding_at": "2025-12",
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": true,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "together_ai",
-    "scored_at": "2026-04-15T06:27:03.466167+00:00",
+    "scored_at": "2026-04-15T21:24:47.896198+00:00",
     "composite_score": 26.23,
     "dimensions": {
       "organic_growth": 52.17,
@@ -2658,24 +3659,35 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": null,
+      "last_valuation_usd": null,
+      "num_funding_rounds": null,
+      "last_funding_at": null,
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": true,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "tonic.ai",
-    "scored_at": "2026-04-15T06:27:03.466278+00:00",
-    "composite_score": 15.92,
+    "scored_at": "2026-04-15T21:24:47.896617+00:00",
+    "composite_score": 6.65,
     "dimensions": {
-      "organic_growth": 32.88,
+      "organic_growth": 18.78,
       "funding_velocity": 0.0,
       "revenue_proxies": 0.0,
-      "product_sentiment": 46.73,
+      "product_sentiment": 14.45,
       "brand_signal": 0.0,
       "founder_signal": 0.0
     },
@@ -2687,21 +3699,32 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": null,
+      "last_valuation_usd": null,
+      "num_funding_rounds": null,
+      "last_funding_at": null,
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": true,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "turso",
-    "scored_at": "2026-04-15T06:27:03.466393+00:00",
-    "composite_score": 30.87,
+    "scored_at": "2026-04-15T21:24:47.897153+00:00",
+    "composite_score": 30.25,
     "dimensions": {
-      "organic_growth": 66.18,
+      "organic_growth": 63.09,
       "funding_velocity": 0.0,
       "revenue_proxies": 0.0,
       "product_sentiment": 88.16,
@@ -2716,18 +3739,29 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": null,
+      "last_valuation_usd": null,
+      "num_funding_rounds": null,
+      "last_funding_at": null,
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": true,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "unconventional_ai",
-    "scored_at": "2026-04-15T06:27:03.466481+00:00",
+    "scored_at": "2026-04-15T21:24:47.897399+00:00",
     "composite_score": 7.9,
     "dimensions": {
       "organic_growth": 14.66,
@@ -2745,22 +3779,33 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": null,
+      "last_valuation_usd": null,
+      "num_funding_rounds": null,
+      "last_funding_at": null,
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": false,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "uniphore",
-    "scored_at": "2026-04-15T06:27:03.466563+00:00",
-    "composite_score": 2.39,
+    "scored_at": "2026-04-15T21:24:47.897637+00:00",
+    "composite_score": 8.25,
     "dimensions": {
       "organic_growth": 8.05,
-      "funding_velocity": 0.0,
+      "funding_velocity": 39.06,
       "revenue_proxies": 0.0,
       "product_sentiment": 3.92,
       "brand_signal": 0.0,
@@ -2774,18 +3819,29 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": 521000000.0,
+      "last_valuation_usd": null,
+      "num_funding_rounds": 3,
+      "last_funding_at": "2025-10",
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": false,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "val_town",
-    "scored_at": "2026-04-15T06:27:03.466675+00:00",
+    "scored_at": "2026-04-15T21:24:47.898059+00:00",
     "composite_score": 13.18,
     "dimensions": {
       "organic_growth": 32.51,
@@ -2803,21 +3859,32 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": null,
+      "last_valuation_usd": null,
+      "num_funding_rounds": null,
+      "last_funding_at": null,
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": true,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "vanta",
-    "scored_at": "2026-04-15T06:27:03.466764+00:00",
-    "composite_score": 21.08,
+    "scored_at": "2026-04-15T21:24:47.898404+00:00",
+    "composite_score": 21.04,
     "dimensions": {
-      "organic_growth": 52.14,
+      "organic_growth": 51.93,
       "funding_velocity": 0.0,
       "revenue_proxies": 0.0,
       "product_sentiment": 53.28,
@@ -2832,24 +3899,35 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": null,
+      "last_valuation_usd": null,
+      "num_funding_rounds": null,
+      "last_funding_at": null,
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": false,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "vast",
-    "scored_at": "2026-04-15T06:27:03.466859+00:00",
-    "composite_score": 25.94,
+    "scored_at": "2026-04-15T21:24:47.898762+00:00",
+    "composite_score": 26.87,
     "dimensions": {
-      "organic_growth": 57.63,
+      "organic_growth": 56.55,
       "funding_velocity": 0.0,
       "revenue_proxies": 0.0,
-      "product_sentiment": 72.07,
+      "product_sentiment": 77.8,
       "brand_signal": 0.0,
       "founder_signal": 0.0
     },
@@ -2861,192 +3939,29 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": null,
+      "last_valuation_usd": null,
+      "num_funding_rounds": null,
+      "last_funding_at": null,
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": false,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }
   },
   {
     "company": "velontra",
-    "scored_at": "2026-04-15T06:27:03.466935+00:00",
-    "composite_score": 2.6,
-    "dimensions": {
-      "organic_growth": 3.6,
-      "funding_velocity": 0.0,
-      "revenue_proxies": 0.0,
-      "product_sentiment": 9.42,
-      "brand_signal": 0.0,
-      "founder_signal": 0.0
-    },
-    "weights": {
-      "organic_growth": 0.2,
-      "funding_velocity": 0.15,
-      "revenue_proxies": 0.15,
-      "product_sentiment": 0.2,
-      "brand_signal": 0.15,
-      "founder_signal": 0.15
-    },
-    "data_available": {
-      "github": false,
-      "hn": true,
-      "reddit": false,
-      "crunchbase": false,
-      "linkedin": false,
-      "twitter": false
-    }
-  },
-  {
-    "company": "vercel",
-    "scored_at": "2026-04-15T06:27:03.467069+00:00",
-    "composite_score": 25.6,
-    "dimensions": {
-      "organic_growth": 48.41,
-      "funding_velocity": 0.0,
-      "revenue_proxies": 0.0,
-      "product_sentiment": 79.6,
-      "brand_signal": 0.0,
-      "founder_signal": 0.0
-    },
-    "weights": {
-      "organic_growth": 0.2,
-      "funding_velocity": 0.15,
-      "revenue_proxies": 0.15,
-      "product_sentiment": 0.2,
-      "brand_signal": 0.15,
-      "founder_signal": 0.15
-    },
-    "data_available": {
-      "github": true,
-      "hn": true,
-      "reddit": false,
-      "crunchbase": false,
-      "linkedin": false,
-      "twitter": false
-    }
-  },
-  {
-    "company": "windsurf",
-    "scored_at": "2026-04-15T06:27:03.467162+00:00",
-    "composite_score": 27.54,
-    "dimensions": {
-      "organic_growth": 53.47,
-      "funding_velocity": 0.0,
-      "revenue_proxies": 0.0,
-      "product_sentiment": 84.25,
-      "brand_signal": 0.0,
-      "founder_signal": 0.0
-    },
-    "weights": {
-      "organic_growth": 0.2,
-      "funding_velocity": 0.15,
-      "revenue_proxies": 0.15,
-      "product_sentiment": 0.2,
-      "brand_signal": 0.15,
-      "founder_signal": 0.15
-    },
-    "data_available": {
-      "github": false,
-      "hn": true,
-      "reddit": false,
-      "crunchbase": false,
-      "linkedin": false,
-      "twitter": false
-    }
-  },
-  {
-    "company": "wiz",
-    "scored_at": "2026-04-15T06:27:03.467254+00:00",
-    "composite_score": 26.67,
-    "dimensions": {
-      "organic_growth": 56.56,
-      "funding_velocity": 0.0,
-      "revenue_proxies": 0.0,
-      "product_sentiment": 76.8,
-      "brand_signal": 0.0,
-      "founder_signal": 0.0
-    },
-    "weights": {
-      "organic_growth": 0.2,
-      "funding_velocity": 0.15,
-      "revenue_proxies": 0.15,
-      "product_sentiment": 0.2,
-      "brand_signal": 0.15,
-      "founder_signal": 0.15
-    },
-    "data_available": {
-      "github": false,
-      "hn": true,
-      "reddit": false,
-      "crunchbase": false,
-      "linkedin": false,
-      "twitter": false
-    }
-  },
-  {
-    "company": "writer",
-    "scored_at": "2026-04-15T06:27:03.467341+00:00",
-    "composite_score": 27.95,
-    "dimensions": {
-      "organic_growth": 63.68,
-      "funding_velocity": 0.0,
-      "revenue_proxies": 0.0,
-      "product_sentiment": 76.08,
-      "brand_signal": 0.0,
-      "founder_signal": 0.0
-    },
-    "weights": {
-      "organic_growth": 0.2,
-      "funding_velocity": 0.15,
-      "revenue_proxies": 0.15,
-      "product_sentiment": 0.2,
-      "brand_signal": 0.15,
-      "founder_signal": 0.15
-    },
-    "data_available": {
-      "github": false,
-      "hn": true,
-      "reddit": false,
-      "crunchbase": false,
-      "linkedin": false,
-      "twitter": false
-    }
-  },
-  {
-    "company": "xai",
-    "scored_at": "2026-04-15T06:27:03.467428+00:00",
-    "composite_score": 27.08,
-    "dimensions": {
-      "organic_growth": 53.75,
-      "funding_velocity": 0.0,
-      "revenue_proxies": 0.0,
-      "product_sentiment": 81.65,
-      "brand_signal": 0.0,
-      "founder_signal": 0.0
-    },
-    "weights": {
-      "organic_growth": 0.2,
-      "funding_velocity": 0.15,
-      "revenue_proxies": 0.15,
-      "product_sentiment": 0.2,
-      "brand_signal": 0.15,
-      "founder_signal": 0.15
-    },
-    "data_available": {
-      "github": false,
-      "hn": true,
-      "reddit": false,
-      "crunchbase": false,
-      "linkedin": false,
-      "twitter": false
-    }
-  },
-  {
-    "company": "zetta_energy",
-    "scored_at": "2026-04-15T06:27:03.467498+00:00",
+    "scored_at": "2026-04-15T21:24:47.899043+00:00",
     "composite_score": 0.0,
     "dimensions": {
       "organic_growth": 0.0,
@@ -3064,11 +3979,262 @@
       "brand_signal": 0.15,
       "founder_signal": 0.15
     },
+    "funding_summary": {
+      "total_funding_usd": null,
+      "last_valuation_usd": null,
+      "num_funding_rounds": null,
+      "last_funding_at": null,
+      "tier1_investor_count": 0,
+      "investors": []
+    },
     "data_available": {
       "github": false,
       "hn": true,
       "reddit": false,
       "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": false,
+      "openvc": false,
+      "linkedin": false,
+      "twitter": false
+    }
+  },
+  {
+    "company": "vercel",
+    "scored_at": "2026-04-15T21:24:47.899458+00:00",
+    "composite_score": 31.36,
+    "dimensions": {
+      "organic_growth": 48.41,
+      "funding_velocity": 38.42,
+      "revenue_proxies": 0.0,
+      "product_sentiment": 79.6,
+      "brand_signal": 0.0,
+      "founder_signal": 0.0
+    },
+    "weights": {
+      "organic_growth": 0.2,
+      "funding_velocity": 0.15,
+      "revenue_proxies": 0.15,
+      "product_sentiment": 0.2,
+      "brand_signal": 0.15,
+      "founder_signal": 0.15
+    },
+    "funding_summary": {
+      "total_funding_usd": 3352000000.0,
+      "last_valuation_usd": null,
+      "num_funding_rounds": 2,
+      "last_funding_at": "2024-05",
+      "tier1_investor_count": 0,
+      "investors": []
+    },
+    "data_available": {
+      "github": true,
+      "hn": true,
+      "reddit": false,
+      "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
+      "linkedin": false,
+      "twitter": false
+    }
+  },
+  {
+    "company": "windsurf",
+    "scored_at": "2026-04-15T21:24:47.899840+00:00",
+    "composite_score": 27.54,
+    "dimensions": {
+      "organic_growth": 53.47,
+      "funding_velocity": 0.0,
+      "revenue_proxies": 0.0,
+      "product_sentiment": 84.25,
+      "brand_signal": 0.0,
+      "founder_signal": 0.0
+    },
+    "weights": {
+      "organic_growth": 0.2,
+      "funding_velocity": 0.15,
+      "revenue_proxies": 0.15,
+      "product_sentiment": 0.2,
+      "brand_signal": 0.15,
+      "founder_signal": 0.15
+    },
+    "funding_summary": {
+      "total_funding_usd": null,
+      "last_valuation_usd": null,
+      "num_funding_rounds": null,
+      "last_funding_at": null,
+      "tier1_investor_count": 0,
+      "investors": []
+    },
+    "data_available": {
+      "github": false,
+      "hn": true,
+      "reddit": false,
+      "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
+      "linkedin": false,
+      "twitter": false
+    }
+  },
+  {
+    "company": "wiz",
+    "scored_at": "2026-04-15T21:24:47.900213+00:00",
+    "composite_score": 21.36,
+    "dimensions": {
+      "organic_growth": 44.76,
+      "funding_velocity": 0.0,
+      "revenue_proxies": 0.0,
+      "product_sentiment": 62.02,
+      "brand_signal": 0.0,
+      "founder_signal": 0.0
+    },
+    "weights": {
+      "organic_growth": 0.2,
+      "funding_velocity": 0.15,
+      "revenue_proxies": 0.15,
+      "product_sentiment": 0.2,
+      "brand_signal": 0.15,
+      "founder_signal": 0.15
+    },
+    "funding_summary": {
+      "total_funding_usd": null,
+      "last_valuation_usd": null,
+      "num_funding_rounds": null,
+      "last_funding_at": null,
+      "tier1_investor_count": 0,
+      "investors": []
+    },
+    "data_available": {
+      "github": false,
+      "hn": true,
+      "reddit": false,
+      "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
+      "linkedin": false,
+      "twitter": false
+    }
+  },
+  {
+    "company": "writer",
+    "scored_at": "2026-04-15T21:24:47.900469+00:00",
+    "composite_score": 27.95,
+    "dimensions": {
+      "organic_growth": 63.68,
+      "funding_velocity": 0.0,
+      "revenue_proxies": 0.0,
+      "product_sentiment": 76.08,
+      "brand_signal": 0.0,
+      "founder_signal": 0.0
+    },
+    "weights": {
+      "organic_growth": 0.2,
+      "funding_velocity": 0.15,
+      "revenue_proxies": 0.15,
+      "product_sentiment": 0.2,
+      "brand_signal": 0.15,
+      "founder_signal": 0.15
+    },
+    "funding_summary": {
+      "total_funding_usd": null,
+      "last_valuation_usd": null,
+      "num_funding_rounds": null,
+      "last_funding_at": null,
+      "tier1_investor_count": 0,
+      "investors": []
+    },
+    "data_available": {
+      "github": false,
+      "hn": true,
+      "reddit": false,
+      "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
+      "linkedin": false,
+      "twitter": false
+    }
+  },
+  {
+    "company": "xai",
+    "scored_at": "2026-04-15T21:24:47.900839+00:00",
+    "composite_score": 27.08,
+    "dimensions": {
+      "organic_growth": 53.75,
+      "funding_velocity": 0.0,
+      "revenue_proxies": 0.0,
+      "product_sentiment": 81.65,
+      "brand_signal": 0.0,
+      "founder_signal": 0.0
+    },
+    "weights": {
+      "organic_growth": 0.2,
+      "funding_velocity": 0.15,
+      "revenue_proxies": 0.15,
+      "product_sentiment": 0.2,
+      "brand_signal": 0.15,
+      "founder_signal": 0.15
+    },
+    "funding_summary": {
+      "total_funding_usd": null,
+      "last_valuation_usd": null,
+      "num_funding_rounds": null,
+      "last_funding_at": null,
+      "tier1_investor_count": 0,
+      "investors": []
+    },
+    "data_available": {
+      "github": false,
+      "hn": true,
+      "reddit": false,
+      "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
+      "linkedin": false,
+      "twitter": false
+    }
+  },
+  {
+    "company": "zetta_energy",
+    "scored_at": "2026-04-15T21:24:47.901141+00:00",
+    "composite_score": 0.0,
+    "dimensions": {
+      "organic_growth": 0.0,
+      "funding_velocity": 0.0,
+      "revenue_proxies": 0.0,
+      "product_sentiment": 0.0,
+      "brand_signal": 0.0,
+      "founder_signal": 0.0
+    },
+    "weights": {
+      "organic_growth": 0.2,
+      "funding_velocity": 0.15,
+      "revenue_proxies": 0.15,
+      "product_sentiment": 0.2,
+      "brand_signal": 0.15,
+      "founder_signal": 0.15
+    },
+    "funding_summary": {
+      "total_funding_usd": null,
+      "last_valuation_usd": null,
+      "num_funding_rounds": null,
+      "last_funding_at": null,
+      "tier1_investor_count": 0,
+      "investors": []
+    },
+    "data_available": {
+      "github": false,
+      "hn": true,
+      "reddit": false,
+      "crunchbase": false,
+      "dealroom": false,
+      "wikipedia": true,
+      "openvc": false,
       "linkedin": false,
       "twitter": false
     }

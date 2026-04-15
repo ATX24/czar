@@ -9,6 +9,9 @@ duckdb>=0.9.0
 httpx>=0.25.0
 praw>=7.7.0
 tenacity>=8.2.0
+cloudscraper>=1.2.71
+beautifulsoup4>=4.12.0
+requests>=2.31.0
 
 # Topic Modeling & NLP
 bertopic>=0.15.0

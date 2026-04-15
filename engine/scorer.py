@@ -246,19 +246,101 @@ def score_founder_signal(hn: dict, linkedin: dict) -> float:
 # Main scoring entrypoint
 # ---------------------------------------------------------------------------
 
+def merge_funding_sources(crunchbase: dict, dealroom: dict, openvc: dict, wiki: dict = None) -> dict:
+    """
+    Merge Crunchbase, Dealroom, Wikipedia, and OpenVC into a single funding dict.
+    Prefers the source with richer data; uses the highest total_funding seen.
+    Priority: Crunchbase API > Wikipedia > Dealroom (for amounts — CB/Wiki are more accurate).
+    """
+    sources = [crunchbase, dealroom, wiki or {}]
+    merged = {}
+
+    # total_funding_usd: take the maximum non-null value across sources
+    totals = [s.get("total_funding_usd") for s in sources if s.get("total_funding_usd")]
+    merged["total_funding_usd"] = max(totals) if totals else None
+
+    # valuation: Dealroom often has this, Crunchbase sometimes
+    merged["last_valuation_usd"] = (
+        dealroom.get("last_valuation_usd") or
+        crunchbase.get("last_valuation_usd")
+    )
+
+    # num_funding_rounds: max
+    rounds_counts = [s.get("num_funding_rounds") for s in sources if s.get("num_funding_rounds")]
+    merged["num_funding_rounds"] = max(rounds_counts) if rounds_counts else None
+
+    # last_funding_at: most recent
+    dates = [s.get("last_funding_at") for s in sources if s.get("last_funding_at")]
+    merged["last_funding_at"] = max(dates) if dates else None
+
+    merged["last_funding_type"] = (
+        crunchbase.get("last_funding_type") or dealroom.get("last_funding_type")
+    )
+    merged["founded_on"] = (
+        crunchbase.get("founded_on") or dealroom.get("founded_on") or (wiki or {}).get("founded_on")
+    )
+    merged["founders"] = (
+        (wiki or {}).get("founders") or []
+    )
+
+    # Merge investor lists (deduplicate by name)
+    seen = set()
+    investors = []
+    tier1_count = 0
+    for source in [crunchbase, dealroom]:
+        for inv in source.get("investors", []):
+            name = inv.get("name", "")
+            if name and name not in seen:
+                seen.add(name)
+                investors.append(inv)
+                if inv.get("tier") == "tier1":
+                    tier1_count += 1
+    # Add OpenVC investors not already seen
+    for inv in openvc.get("openvc_investors", []):
+        name = inv.get("name", "")
+        if name and name not in seen:
+            seen.add(name)
+            investors.append({"name": name, "tier": "other"})
+
+    merged["investors"]           = investors
+    merged["tier1_investor_count"] = tier1_count
+
+    # step-ups: prefer Crunchbase (more complete round history)
+    merged["round_size_step_ups"] = (
+        crunchbase.get("round_size_step_ups") or
+        dealroom.get("round_size_step_ups") or []
+    )
+
+    # Funding rounds: union by date (prefer Crunchbase, fill in from Dealroom)
+    cb_rounds = {r.get("announced_on"): r for r in crunchbase.get("funding_rounds", []) if r.get("announced_on")}
+    for rd in dealroom.get("funding_rounds", []):
+        k = rd.get("announced_on")
+        if k and k not in cb_rounds:
+            cb_rounds[k] = rd
+    merged["funding_rounds"] = sorted(cb_rounds.values(), key=lambda x: x.get("announced_on") or "")
+
+    return merged
+
+
 def score_company(company_dir: Path) -> dict:
     company_name = company_dir.name
 
-    github = load_json(company_dir / "github.json")
-    hn = load_json(company_dir / "hn.json")
-    reddit = load_json(company_dir / "reddit.json")
+    github     = load_json(company_dir / "github.json")
+    hn         = load_json(company_dir / "hn.json")
+    reddit     = load_json(company_dir / "reddit.json")
     crunchbase = load_json(company_dir / "crunchbase.json")
-    linkedin = load_json(company_dir / "linkedin.json")
-    twitter = load_json(company_dir / "twitter.json")
+    dealroom   = load_json(company_dir / "dealroom.json")
+    openvc     = load_json(company_dir / "openvc.json")
+    wiki       = load_json(company_dir / "wiki.json")
+    linkedin   = load_json(company_dir / "linkedin.json")
+    twitter    = load_json(company_dir / "twitter.json")
+
+    # Merge all funding signals into one dict for the scorer
+    funding = merge_funding_sources(crunchbase, dealroom, openvc, wiki)
 
     dimension_scores = {
         "organic_growth": score_organic_growth(github, hn, reddit),
-        "funding_velocity": score_funding_velocity(crunchbase),
+        "funding_velocity": score_funding_velocity(funding),
         "revenue_proxies": score_revenue_proxies(linkedin),
         "product_sentiment": score_product_sentiment(hn, reddit, github),
         "brand_signal": score_brand_signal(twitter),
@@ -273,13 +355,25 @@ def score_company(company_dir: Path) -> dict:
         "composite_score": round(composite, 2),
         "dimensions": {k: round(v * 100, 2) for k, v in dimension_scores.items()},
         "weights": WEIGHTS,
+        # Surface merged funding summary for easy inspection
+        "funding_summary": {
+            "total_funding_usd": funding.get("total_funding_usd"),
+            "last_valuation_usd": funding.get("last_valuation_usd"),
+            "num_funding_rounds": funding.get("num_funding_rounds"),
+            "last_funding_at": funding.get("last_funding_at"),
+            "tier1_investor_count": funding.get("tier1_investor_count", 0),
+            "investors": [i["name"] for i in funding.get("investors", [])[:10]],
+        },
         "data_available": {
-            "github": bool(github),
-            "hn": bool(hn),
-            "reddit": bool(reddit),
-            "crunchbase": bool(crunchbase),
-            "linkedin": bool(linkedin),
-            "twitter": bool(twitter),
+            "github":     bool(github),
+            "hn":         bool(hn),
+            "reddit":     bool(reddit),
+            "crunchbase": bool(crunchbase) and not crunchbase.get("error"),
+            "dealroom":   bool(dealroom) and not dealroom.get("error"),
+            "wikipedia":  bool(wiki) and not wiki.get("error"),
+            "openvc":     bool(openvc) and not openvc.get("error"),
+            "linkedin":   bool(linkedin),
+            "twitter":    bool(twitter),
         },
     }
 

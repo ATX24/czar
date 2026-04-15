@@ -4,6 +4,10 @@ Batch scraper — reads data/companies.json and runs a given scraper across all 
 Usage:
   python engine/batch_scrape.py github
   python engine/batch_scrape.py hn
+  python engine/batch_scrape.py crunchbase
+  python engine/batch_scrape.py dealroom
+  python engine/batch_scrape.py openvc
+  python engine/batch_scrape.py funding       # crunchbase + dealroom + openvc in one pass
 """
 
 import sys
@@ -17,6 +21,10 @@ sys.path.insert(0, str(Path(__file__).parent))
 
 import github_scraper
 import hn_scraper
+import crunchbase_scraper
+import dealroom_scraper
+import openvc_scraper
+import wiki_scraper
 
 # ---------------------------------------------------------------------------
 # Explicit repo overrides where org/org pattern doesn't hold
@@ -230,17 +238,243 @@ def run_hn(companies):
 
 
 # ---------------------------------------------------------------------------
+# Crunchbase batch
+# ---------------------------------------------------------------------------
+
+# Slug overrides where name_to_slug() would produce the wrong result
+CRUNCHBASE_SLUG_OVERRIDES = {
+    "Cursor":            "anysphere",          # Cursor is made by Anysphere
+    "Bolt":              "bolt-new",
+    "Physical Intelligence": "physical-intelligence",
+    "Fireworks AI":      "fireworks-ai",
+    "Together AI":       "together-ai",
+    "Figure AI":         "figure-ai",
+    "Shield AI":         "shield-ai",
+    "Skild AI":          "skild-ai",
+    "Hippocratic AI":    "hippocratic-ai",
+    "Sakana AI":         "sakana-ai",
+    "7AI":               "7ai",
+    "Merge Labs":        "merge-labs",
+    "QuEra Computing":   "quera-computing",
+    "Gecko Robotics":    "gecko-robotics",
+    "Agility Robotics":  "agility-robotics",
+    "Redwood Materials": "redwood-materials",
+    "Relativity Space":  "relativity-space",
+    "Helion Energy":     "helion-energy",
+    "Arc Boat Company":  "arc-boat-company",
+    "Val Town":          "val-town",
+    "LMArena":           "lmarena",
+    "Fal":               "fal-ai",
+    "Tonic.ai":          "tonic-ai",
+}
+
+
+def run_crunchbase(companies):
+    success, failed, skipped = [], [], []
+    total = len(companies)
+    print(f"\n=== Crunchbase Batch: {total} companies ===\n")
+
+    for i, company in enumerate(companies, 1):
+        name = company["name"]
+        slug = CRUNCHBASE_SLUG_OVERRIDES.get(name)
+        print(f"[{i}/{total}] {name}" + (f" (slug={slug})" if slug else ""))
+
+        try:
+            data = crunchbase_scraper.scrape(name, slug)
+            crunchbase_scraper.write_output(name, data)
+
+            if data.get("error"):
+                failed.append((name, data["error"]))
+                print(f"  FAIL — {data['error']}\n")
+            else:
+                success.append(name)
+                total_f = data.get("total_funding_usd")
+                rounds  = len(data.get("funding_rounds", []))
+                invs    = len(data.get("investors", []))
+                t1      = data.get("tier1_investor_count", 0)
+                amt_str = f"${total_f/1e6:.0f}M" if total_f else "unknown"
+                print(f"  OK — raised {amt_str} | {rounds} rounds | {invs} investors ({t1} tier1)\n")
+        except Exception as e:
+            failed.append((name, str(e)))
+            print(f"  FAIL — {e}\n")
+            traceback.print_exc()
+
+        time.sleep(1.5)  # be polite
+
+    print(f"\n=== Crunchbase Summary ===")
+    print(f"  Success : {len(success)}")
+    print(f"  Failed  : {len(failed)}")
+    if failed:
+        print(f"  Failures: {[n for n, _ in failed]}")
+    return success, failed
+
+
+# ---------------------------------------------------------------------------
+# Dealroom batch
+# ---------------------------------------------------------------------------
+
+DEALROOM_SLUG_OVERRIDES = {
+    "Cursor":            "anysphere",
+    "Physical Intelligence": "physical-intelligence",
+    "Fireworks AI":      "fireworks-ai",
+    "Together AI":       "together-ai",
+    "Figure AI":         "figure-ai",
+    "Shield AI":         "shield-ai",
+    "Skild AI":          "skild-ai",
+    "Val Town":          "val-town",
+    "Arc Boat Company":  "arc-boat",
+    "Tonic.ai":          "tonic-ai",
+}
+
+
+def run_dealroom(companies):
+    success, failed = [], []
+    total = len(companies)
+    print(f"\n=== Dealroom Batch: {total} companies ===\n")
+
+    for i, company in enumerate(companies, 1):
+        name = company["name"]
+        slug = DEALROOM_SLUG_OVERRIDES.get(name)
+        print(f"[{i}/{total}] {name}")
+
+        try:
+            data = dealroom_scraper.scrape(name, slug)
+            dealroom_scraper.write_output(name, data)
+
+            if data.get("error"):
+                failed.append((name, data["error"]))
+                print(f"  FAIL — {data['error']}\n")
+            else:
+                success.append(name)
+                total_f  = data.get("total_funding_usd")
+                valuation = data.get("last_valuation_usd")
+                amt_str  = f"${total_f/1e6:.0f}M" if total_f else "unknown"
+                val_str  = f"${valuation/1e6:.0f}M" if valuation else "unknown"
+                print(f"  OK — raised {amt_str} | valuation {val_str}\n")
+        except Exception as e:
+            failed.append((name, str(e)))
+            print(f"  FAIL — {e}\n")
+
+        time.sleep(1.5)
+
+    print(f"\n=== Dealroom Summary ===")
+    print(f"  Success : {len(success)}")
+    print(f"  Failed  : {len(failed)}")
+    if failed:
+        print(f"  Failures: {[n for n, _ in failed]}")
+    return success, failed
+
+
+# ---------------------------------------------------------------------------
+# OpenVC batch
+# ---------------------------------------------------------------------------
+
+def run_openvc(companies):
+    success, failed = [], []
+    total = len(companies)
+    print(f"\n=== OpenVC Batch: {total} companies ===\n")
+
+    for i, company in enumerate(companies, 1):
+        name = company["name"]
+        print(f"[{i}/{total}] {name}")
+
+        try:
+            data = openvc_scraper.scrape(name)
+            openvc_scraper.write_output(name, data)
+
+            if data.get("error"):
+                failed.append((name, data["error"]))
+                print(f"  FAIL — {data['error']}\n")
+            else:
+                success.append(name)
+                n_invs = data.get("openvc_investor_count", 0)
+                print(f"  OK — {n_invs} investors found\n")
+        except Exception as e:
+            failed.append((name, str(e)))
+            print(f"  FAIL — {e}\n")
+
+        time.sleep(1.0)
+
+    print(f"\n=== OpenVC Summary ===")
+    print(f"  Success : {len(success)}")
+    print(f"  Failed  : {len(failed)}")
+    if failed:
+        print(f"  Failures: {[n for n, _ in failed]}")
+    return success, failed
+
+
+# ---------------------------------------------------------------------------
+# Wikipedia batch
+# ---------------------------------------------------------------------------
+
+def run_wikipedia(companies):
+    success, failed = [], []
+    total = len(companies)
+    print(f"\n=== Wikipedia Batch: {total} companies ===\n")
+
+    for i, company in enumerate(companies, 1):
+        name      = company["name"]
+        wiki_title = wiki_scraper.WIKI_TITLE_OVERRIDES.get(name)
+        print(f"[{i}/{total}] {name}" + (f" (title='{wiki_title}')" if wiki_title else ""))
+
+        try:
+            data = wiki_scraper.scrape(name, wiki_title)
+            wiki_scraper.write_output(name, data)
+
+            if data.get("error"):
+                # Missing article is not a hard failure for small companies
+                failed.append((name, data["error"]))
+                print(f"  SKIP — {data['error']}\n")
+            else:
+                success.append(name)
+                total_f = data.get("total_funding_usd")
+                rounds  = len(data.get("funding_rounds", []))
+                amt_str = (f"${total_f/1e9:.1f}B" if total_f and total_f >= 1e9
+                           else (f"${total_f/1e6:.0f}M" if total_f else "unknown"))
+                print(f"  OK — {rounds} rounds | total {amt_str} | "
+                      f"founded {data.get('founded_on', '?')}\n")
+        except Exception as e:
+            failed.append((name, str(e)))
+            print(f"  FAIL — {e}\n")
+
+        time.sleep(0.5)   # Wikipedia has a generous rate limit
+
+    print(f"\n=== Wikipedia Summary ===")
+    print(f"  Success : {len(success)}")
+    print(f"  Skipped : {sum(1 for _, e in failed if 'No Wikipedia' in e)}")
+    print(f"  Failed  : {sum(1 for _, e in failed if 'No Wikipedia' not in e)}")
+    return success, failed
+
+
+# ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
 
+VALID_SCRAPERS = ("github", "hn", "crunchbase", "dealroom", "openvc", "wikipedia", "funding")
+
 if __name__ == "__main__":
-    if len(sys.argv) < 2 or sys.argv[1] not in ("github", "hn"):
-        print("Usage: python batch_scrape.py [github|hn]")
+    if len(sys.argv) < 2 or sys.argv[1] not in VALID_SCRAPERS:
+        print(f"Usage: python batch_scrape.py [{' | '.join(VALID_SCRAPERS)}]")
         sys.exit(1)
 
     companies = load_companies()
+    cmd = sys.argv[1]
 
-    if sys.argv[1] == "github":
+    if cmd == "github":
         run_github(companies)
-    else:
+    elif cmd == "hn":
         run_hn(companies)
+    elif cmd == "crunchbase":
+        run_crunchbase(companies)
+    elif cmd == "dealroom":
+        run_dealroom(companies)
+    elif cmd == "openvc":
+        run_openvc(companies)
+    elif cmd == "wikipedia":
+        run_wikipedia(companies)
+    elif cmd == "funding":
+        # Wikipedia first (free, reliable), then API-based if keys are set
+        print("=== Funding pass: Wikipedia → Crunchbase → Dealroom ===")
+        run_wikipedia(companies)
+        run_crunchbase(companies)
+        run_dealroom(companies)
