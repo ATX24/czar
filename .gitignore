@@ -31,6 +31,9 @@ data/raw/
 .DS_Store
 Thumbs.db
 
+# Batch log files
+*.log
+
 # Node (frontend)
 node_modules/
 dist/
