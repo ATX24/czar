@@ -1,0 +1,151 @@
+{
+  "github": {
+    "required": [
+      "company_name",
+      "github_org",
+      "github_repo",
+      "scraped_at",
+      "stars",
+      "forks",
+      "fork_to_star_ratio",
+      "star_trajectory_30d",
+      "commit_velocity",
+      "contributor_count"
+    ],
+    "properties": {
+      "company_name": { "type": "string" },
+      "github_org": { "type": "string" },
+      "github_repo": { "type": "string" },
+      "scraped_at": { "type": "string", "format": "date-time" },
+      "stars": { "type": "integer" },
+      "forks": { "type": "integer" },
+      "fork_to_star_ratio": { "type": ["number", "null"] },
+      "star_trajectory_30d": {
+        "type": "object",
+        "properties": {
+          "stars_30d_ago_approx": { "type": "integer" },
+          "stars_gained_30d_approx": { "type": "integer" },
+          "note": { "type": "string" }
+        }
+      },
+      "commit_velocity": {
+        "type": "object",
+        "properties": {
+          "commits_last_4w": { "type": ["integer", "null"] },
+          "commits_per_week_avg": { "type": ["number", "null"] }
+        }
+      },
+      "contributor_count": { "type": "integer" },
+      "open_issues": { "type": ["integer", "null"] },
+      "watchers": { "type": ["integer", "null"] },
+      "language": { "type": ["string", "null"] },
+      "description": { "type": ["string", "null"] },
+      "created_at": { "type": ["string", "null"] },
+      "pushed_at": { "type": ["string", "null"] }
+    }
+  },
+  "hn": {
+    "required": ["company_name", "scraped_at", "company_mention_count"],
+    "properties": {
+      "company_name": { "type": "string" },
+      "scraped_at": { "type": "string", "format": "date-time" },
+      "company_mention_count": { "type": "integer" },
+      "founder_mention_count": { "type": "integer" },
+      "top_company_posts": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "title": { "type": ["string", "null"] },
+            "url": { "type": ["string", "null"] },
+            "points": { "type": ["integer", "null"] },
+            "num_comments": { "type": ["integer", "null"] },
+            "created_at": { "type": ["string", "null"] },
+            "author": { "type": ["string", "null"] }
+          }
+        }
+      }
+    }
+  },
+  "twitter": {
+    "required": ["company_name", "scraped_at", "profiles"],
+    "properties": {
+      "company_name": { "type": "string" },
+      "scraped_at": { "type": "string", "format": "date-time" },
+      "profiles": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "handle": { "type": "string" },
+            "type": { "type": "string", "enum": ["company", "founder"] },
+            "followers": { "type": ["integer", "null"] },
+            "following": { "type": ["integer", "null"] },
+            "tweet_count": { "type": ["integer", "null"] },
+            "verified": { "type": "boolean" },
+            "avg_engagement_per_tweet": { "type": ["number", "null"] },
+            "content_type_ratio": { "type": "object" },
+            "tweets_analyzed": { "type": "integer" }
+          }
+        }
+      }
+    }
+  },
+  "reddit": {
+    "required": ["company_name", "scraped_at", "global_mention_count"],
+    "properties": {
+      "company_name": { "type": "string" },
+      "scraped_at": { "type": "string", "format": "date-time" },
+      "global_mention_count": { "type": "integer" },
+      "subreddit_mention_counts": { "type": "object" },
+      "top_posts": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "title": { "type": "string" },
+            "subreddit": { "type": "string" },
+            "score": { "type": "integer" },
+            "num_comments": { "type": "integer" },
+            "url": { "type": "string" },
+            "created_utc": { "type": "number" }
+          }
+        }
+      }
+    }
+  },
+  "crunchbase": {
+    "required": ["company_name", "scraped_at"],
+    "properties": {
+      "company_name": { "type": "string" },
+      "crunchbase_permalink": { "type": "string" },
+      "scraped_at": { "type": "string", "format": "date-time" },
+      "total_funding_usd": { "type": ["number", "null"] },
+      "num_funding_rounds": { "type": ["integer", "null"] },
+      "last_funding_type": { "type": ["string", "null"] },
+      "last_funding_at": { "type": ["string", "null"] },
+      "ipo_status": { "type": ["string", "null"] },
+      "founded_on": { "type": ["string", "null"] },
+      "funding_rounds": { "type": "array" },
+      "investors": { "type": "array" },
+      "tier1_investor_count": { "type": "integer" },
+      "round_size_step_ups": { "type": "array" }
+    }
+  },
+  "linkedin": {
+    "required": ["company_name", "scraped_at"],
+    "properties": {
+      "company_name": { "type": "string" },
+      "linkedin_url": { "type": "string" },
+      "scraped_at": { "type": "string", "format": "date-time" },
+      "headcount_on_linkedin": { "type": ["integer", "null"] },
+      "headcount_range": { "type": ["string", "null"] },
+      "founded_year": { "type": ["integer", "null"] },
+      "company_type": { "type": ["string", "null"] },
+      "industries": { "type": "array" },
+      "follower_count": { "type": ["integer", "null"] },
+      "hq_location": { "type": ["string", "null"] },
+      "description": { "type": ["string", "null"] }
+    }
+  }
+}
